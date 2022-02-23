@@ -99,7 +99,51 @@ Er zijn 2 vormen van energie aanwezig in een massa-veer-systeem. We hebben de po
 	E(x) = & \frac{1}{2} k A^2 (cos^2(\omega t +\varphi) + sin^2(\omega t + \varphi))\\
 	E(x) = & \frac{1}{2} k A^2
 \end{align*} 
-We zien nu duidelijk dat de hoeveelheid energie niet afhankelijk is van de uitwijking van de massa. Met andere woorden, de energie blijft constant in het systeem.
+We zien nu duidelijk dat de hoeveelheid energie niet afhankelijk is van de uitwijking van de massa. Met andere woorden, de energie blijft constant in het systeem (Figuur \ref{fig:energiebalans}).
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Energie_Balans}
+	\caption[Energie balans]{Energie balans}
+	\label{fig:energiebalans}
+\end{figure}
+
+\newpage
+
+\section{Afleiding 3}
+\textbf{Snelheid in functie van de afstand}
+\begin{equation*}
+	\frac{dv}{dt} = \frac{dv}{dx}\cdot\frac{dx}{dt}
+\end{equation*}
+We kunnen vergelijkingen \ref{eq:trilling} en \ref{eq:trillingsnelheid} invullen:
+\begin{equation*}
+	-A\omega^2cos(\omega t + \varphi) = \frac{dv}{dx}\cdot A\omega sin(\omega t +\varphi)
+\end{equation*}
+Na schrappen en herschikken:
+\begin{equation*}
+	\frac{dv}{dx} = \frac{\omega cos(\omega t + \varphi)}{sin(\omega t + \varphi)}
+\end{equation*}
+Sinus substitutie:
+\begin{align*}
+	\frac{dv}{dx} =& \frac{\omega cos(\omega t + \varphi)}{\sqrt{1-cos^2(\omega t + \varphi)}}\\
+	\frac{dv}{dx} =& \frac{\pm \omega \frac{x}{A}}{\sqrt{1-\frac{x^2}{A^2}}}
+\end{align*}
+Nu integratie van beide leden:
+\begin{equation*}
+	\int dv = \int \frac{\pm \omega \frac{x}{A}}{\sqrt{1-\frac{x^2}{A^2}}} dx
+\end{equation*}
+De snelheid in functie van de afstand is dus:
+\begin{equation}
+	\label{eq:snelheid_positie}
+	v(x) = \omega A\sqrt{1-\frac{x^2}{A^2}}
+\end{equation}
+Uit vergelijking \ref{eq:snelheid_positie} kunnen we nu ook afleiden wat de uitdrukking is voor $v_{\text{max}}$. We weten dat $v_{\text{max}}$ zich zal voordoen bij het evenwichtspunt oftewel als x = 0.
+\begin{align*}
+	v(x) =& \omega A\sqrt{1-\frac{x^2}{A^2}}\\
+	v_{\text{max}} =& \omega A\sqrt{1-\frac{0^2}{A^2}}\\
+	v_{\text{max}} =& \omega A\sqrt{1}\\
+	v_{\text{max}} =& \omega A
+\end{align*}
+
 \newpage
 \section*{Besluit}
 
