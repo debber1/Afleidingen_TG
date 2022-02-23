@@ -31,7 +31,7 @@ plt.yticks([])
 plt.text(-np.pi/2 +0.1, 0.1, '- \u03C6')
 plt.text(-2.8, 0.9, 'A')
 plt.text(-2.8, -0.95, '- A')
-plt.show()
+#plt.show()
 plt.savefig('Harmonische_Oscillator.pdf')
 
 plt.clf()

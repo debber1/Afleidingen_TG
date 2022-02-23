@@ -88,7 +88,7 @@ Vergelijking \ref{eq:Bewegingsvergelijking} is nu een oplossing voor differentia
 
 \newpage
 \section{Afleiding 2}
-\textbf{Afleiding van de potentiële en kinetische energie van een ongedempte trilling in functie van de tijd en de plaats}
+\textbf{Afleiding van de potentiële en kinetische energie van een ongedempte trilling in functie van de plaats}
 \\
 
 Er zijn 2 vormen van energie aanwezig in een massa-veer-systeem. We hebben de potentiële energie in de veer en de kinetische energie van het blokje.
@@ -143,6 +143,42 @@ Uit vergelijking \ref{eq:snelheid_positie} kunnen we nu ook afleiden wat de uitd
 	v_{\text{max}} =& \omega A\sqrt{1}\\
 	v_{\text{max}} =& \omega A
 \end{align*}
+\newpage
+\section{Afleiding 4}
+\textbf{Afleiding van de beweging van een pendulum aan de hand van de bewegingsvergelijking}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\linewidth]{Pendulum}
+	\caption[Pendulum]{Pendulum}
+	\label{fig:pendulum}
+\end{figure}
+De drijvende kracht van de pendulum is gelijk aan:
+\begin{equation*}
+	F = -mg sin(\theta)
+\end{equation*}
+Hiermee kunnen we de bewegingsvergelijking opstellen:
+\begin{equation*}
+	m\frac{d^2x}{dt^2} = -mgsin(\theta)
+\end{equation*}
+We kunnen stellen dat $sin(\theta) \approx \theta$ voor een kleine $\theta$:
+\begin{equation*}
+	m\frac{d^2x}{dt^2} = -mg\theta
+\end{equation*}
+We kunnen ook stellen dat $x = l\theta$:
+\begin{equation*}
+	ml\frac{d^2\theta}{dt^2} = -mg\theta
+\end{equation*}
+We kunnen dit nu herschrijven naar:
+\begin{equation*}
+	\frac{d^2\theta}{dt^2} +\frac{g}{l}\theta = 0
+\end{equation*}
+Dit geeft ons een differentiaalvergelijking. Een oplossing ziet er als volgt uit:
+\begin{equation*}
+	\theta (t) = \theta_0 cos(\omega t +\varphi)
+\end{equation*}
+Hierbij zien we dat $\omega = \sqrt{\frac{g}{l}}$.
+\newpage
+
 
 \newpage
 \section*{Besluit}
