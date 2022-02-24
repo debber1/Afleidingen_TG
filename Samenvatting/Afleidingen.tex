@@ -25,7 +25,7 @@
 
 \section*{Inleiding}
 
-De afleidingen voor trillingen en golven. 
+De afleidingen voor trillingen en golven. \href{https://github.com/debber1/Afleidingen_TG}{De source code is te vinden op github.}
 
 \section{Afleiding 1}
 
@@ -178,6 +178,58 @@ Dit geeft ons een differentiaalvergelijking. Een oplossing ziet er als volgt uit
 \end{equation*}
 Hierbij zien we dat $\omega = \sqrt{\frac{g}{l}}$.
 \newpage
+\section{Afleiding 5}
+\textbf{Gedempte harmonische trilling}\\
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{DempingVeer}
+	\caption[Gedempt massa veer systeem]{Gedempt massa veer systeem}
+	\label{fig:dempingveer}
+\end{figure}
+We beginnen met de bewegingsvergelijking op te stellen:
+\begin{align*}
+	m \vec{a} =& \vec{F}_{veer} + \vec{F}_{demper}\\
+	m \frac{d^2x}{dt^2} = & -kx - bv\\
+	m \frac{d^2x}{dt^2} = & -kx - b\frac{dx}{dt}\\
+	0 = & m \frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx
+\end{align*}
+We maken gebruik van de formule van Euler $e^{i\varphi}=cos(\varphi) +isin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
+\begin{equation*}
+	x^2(t) = Ae^{(\gamma +i\omega)t+i\varphi}
+\end{equation*}
+Het reëel deel is dus:
+\begin{equation*}
+	x(t) = Re(x^2(t)) = Ae^{\gamma t}cos(\omega t + \varphi)
+\end{equation*}
+We kunnen deze nu invullen in de bewegingsvergelijking:
+\begin{equation}
+	\label{eq:complexbeweging}
+	m(\gamma +i\omega)^2x^2(t) + b(\gamma +i\omega)e^{(\gamma +i\omega)t+i\varphi}+ke^{(\gamma +i\omega)t+i\varphi} = 0
+\end{equation}
+Na herordenen en het delen door m, krijgen we:
+\begin{equation*}
+	\gamma^2+2i\gamma\omega-\omega^2+\frac{b}{m}\gamma+i\frac{\omega b}{m}+\frac{k}{m}=0
+\end{equation*}
+We kijken nu naar het imaginair deel:
+\begin{align*}
+	2i\gamma \omega +i\frac{\omega b}{m}&=0\\
+	2\gamma + \frac{b}{m} = 0\\
+	-\frac{b}{2m} = \gamma
+\end{align*}
+We vullen nu deze waarde van $\gamma$ in in het reëel deel van vergelijking \ref{eq:complexbeweging}:
+\begin{align*}
+	\gamma^2-\omega^2+\frac{b}{m}\gamma+\frac{k}{m} &=0\\
+	(-\frac{b}{2m})^2-\omega^2+\frac{b}{m}(-\frac{b}{2m})+\frac{k}{m} &=0\\ 
+	\frac{k}{m}-\frac{b^2}{4m^2}&=\omega^2\\
+	\sqrt{\frac{k}{m}-\frac{b^2}{4m^2}}&=\omega
+\end{align*}
+Hiermee hebben we nu de natuurlijke frequentie van het systeem gevonden. We kunnen tot slot ook nog stellen dat:
+\begin{equation*}
+	x(t) = Re(x^2(t)) = Ae^{-\frac{b}{2m} t}cos(\omega t + \varphi)
+\end{equation*}
+\newpage
+
+
 
 
 \newpage
