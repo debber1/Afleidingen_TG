@@ -195,16 +195,16 @@ We beginnen met de bewegingsvergelijking op te stellen:
 \end{align*}
 We maken gebruik van de formule van Euler $e^{i\varphi}=cos(\varphi) +isin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
 \begin{equation*}
-	x^2(t) = Ae^{(\gamma +i\omega)t+i\varphi}
+	\widetilde{x}(t) = Ae^{(\gamma +i\omega)t+i\varphi}
 \end{equation*}
 Het reëel deel is dus:
 \begin{equation*}
-	x(t) = Re(x^2(t)) = Ae^{\gamma t}cos(\omega t + \varphi)
+	x(t) = Re(\widetilde{x}(t)) = Ae^{\gamma t}cos(\omega t + \varphi)
 \end{equation*}
 We kunnen deze nu invullen in de bewegingsvergelijking:
 \begin{equation}
 	\label{eq:complexbeweging}
-	m(\gamma +i\omega)^2x^2(t) + b(\gamma +i\omega)e^{(\gamma +i\omega)t+i\varphi}+ke^{(\gamma +i\omega)t+i\varphi} = 0
+	m(\gamma +i\omega)^2\widetilde{x}(t) + b(\gamma +i\omega)e^{(\gamma +i\omega)t+i\varphi}+ke^{(\gamma +i\omega)t+i\varphi} = 0
 \end{equation}
 Na herordenen en het delen door m, krijgen we:
 \begin{equation*}
@@ -225,7 +225,7 @@ We vullen nu deze waarde van $\gamma$ in in het reëel deel van vergelijking \re
 \end{align*}
 Hiermee hebben we nu de natuurlijke frequentie van het systeem gevonden. We kunnen tot slot ook nog stellen dat:
 \begin{equation*}
-	x(t) = Re(x^2(t)) = Ae^{-\frac{b}{2m} t}cos(\omega t + \varphi)
+	x(t) = Re(\widetilde{x}(t)) = Ae^{-\frac{b}{2m} t}cos(\omega t + \varphi)
 \end{equation*}
 \newpage
 
