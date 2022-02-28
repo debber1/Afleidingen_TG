@@ -243,12 +243,47 @@ We kunnen nu drie gevallen onderscheiden:
 \end{figure}
 
 
-
 \newpage
 \section{Afleiding 6}
-
-
-
+\textbf{Gedwongen trillingen}\\
+We stellen eerst de bewegingsvergelijking op:
+\begin{equation}
+	m\frac{d^2\widetilde{x}(t)}{dt^2}+b\frac{d\widetilde{x}(t)}{dt}+k\widetilde{x}(t) = F_0cos(\omega t)
+	\label{eq:gedwongenbewegings}
+\end{equation}
+Een voorstel voor de algemene oplossing van differentiaalvergelijking \ref{eq:gedwongenbewegings} ziet er als volgt uit:
+\begin{equation*}
+	\widetilde{x}(t) = Ae^{i(\omega t +\varphi)}
+\end{equation*}
+waarbij $\widetilde{F} = F_0e^{i\omega t}e^{-i\varphi}$.
+Dit kunnen we nu invullen in vergelijking \ref{eq:gedwongenbewegings}:
+\begin{align*}
+	m\omega^2\widetilde{x}(t)+i\omega b\widetilde{x}(t)+k\widetilde{x}(t) & =F_0e^{i\omega t}e^{-i\varphi}\\
+	m\omega^2A^{i\omega t}e^{i\varphi}+i\omega bA^{i\omega t}e^{i\varphi}+kA^{i\omega t}e^{i\varphi} & =F_0e^{i\omega t}e^{-i\varphi}\\
+	m\omega^2A+i\omega b+k & =F_0e^{-i\varphi} 
+\end{align*}
+We kunnen dit opsplitsen in een imaginair en reëel deel:
+\begin{description}
+	\item[Imaginair:]$\omega bA = -F_0sin(\varphi)$
+	\item[Reëel:] $-m\omega A +kA = F_0cos(\varphi)$
+\end{description}
+Als we nu het imaginair deel delen door het reëel deel verkrijgen we voor $\varphi$:
+\begin{align*}
+	-\frac{\omega b}{k-m\omega^2} &= tan(\varphi)\\
+	bgtan(\frac{-\omega b}{k-m\omega^2}) & =\varphi
+\end{align*}
+Om de amplitude te bepalen kijken we opnieuw naar het imaginair deel:
+\begin{align*}
+	\omega bA &= -F_0sin(\varphi)\\
+	\omega bA &= -F_0\frac{tan(\varphi)}{\sqrt{1+tan^2(\varphi)}}\\
+	\omega bA &= -F_0\frac{tan(bgtan(\frac{-\omega b}{k-m\omega^2}))}{\sqrt{1+tan^2(bgtan(\frac{-\omega b}{k-m\omega^2}))}}\\
+	\omega bA &= -F_0\frac{\frac{-\omega b}{k-m\omega^2}}{\sqrt{1+\frac{\omega^2 b^2}{(k-m\omega^2)^2}}}\\
+	\omega bA &= -F_0\frac{\frac{-\omega b}{k-m\omega^2}}{\sqrt{\frac{(k-m\omega^2)^2+\omega^2 b^2}{(k-m\omega^2)^2}}}\\
+	A &= \frac{\frac{F_0}{k-m\omega^2}}{\sqrt{\frac{(k-m\omega^2)^2+\omega^2 b^2}{(k-m\omega^2)^2}}}\\
+	A &= \frac{\frac{F_0}{m}}{\sqrt{(\frac{k}{m}-\omega^2)^2+\frac{\omega^2b^2}{m^2}}}\\
+	A &= \frac{\frac{F_0}{m}}{\sqrt{(\omega_0^2-\omega^2)^2+\frac{\omega^2b^2}{m^2}}}	
+\end{align*}
+met $\omega_0$ de natuurlijke frequentie van het systeem en $\omega$ de gedwongen frequentie.
 \newpage
 \section*{Besluit}
 
