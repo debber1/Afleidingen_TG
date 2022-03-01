@@ -285,6 +285,31 @@ Om de amplitude te bepalen kijken we opnieuw naar het imaginair deel:
 \end{align*}
 met $\omega_0$ de natuurlijke frequentie van het systeem en $\omega$ de gedwongen frequentie.
 \newpage
+\section{Afleiding 7}
+\textbf{Golf vergelijking}\\
+We nemen aan da $F_r$ en $F_l$ uit figuur \ref{fig:touwgolf} gelijk zijn aan elkaar en aan de spanning in het touw $\sigma A$. we stellen ook dat de massa voldoet aan $dm=\rho dsA$.\\
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"touw_golf"}
+	\caption[Touw]{Touw}
+	\label{fig:touwgolf}
+\end{figure}\\
+We starten met het opstellen van de wet van Newton:
+\begin{align*}
+	\sum\vec{F}&=m\vec{a}\\
+	F_rsin(\alpha_r) & = F_lsin(\alpha_l) = dma_y\\
+	\sigma A(sin(\alpha_r)-sin(\alpha_l)) & = dm\frac{\partial^2y}{\partial t^2}\\
+	\sigma(\frac{dy}{dx}|_r-\frac{dy}{dx}|_l) & = \rho ds \frac{\partial^2y}{\partial t^2}
+\end{align*}
+We stellen dat $\alpha$ klein is, en dus kunnen we zeggen dat $sin(\alpha)\approx tan(\alpha) = \frac{dx}{dy}$. We nemen ook aan dat $ds \approx dx$.
+\begin{align*}
+	\sigma\frac{\frac{dy}{dx}|_r-\frac{dy}{dx}|_l}{dx} & = \rho \frac{\partial^2y}{\partial t^2}\\
+	\sigma\frac{\partial^2y}{\partial x^2} & = \rho \frac{\partial^2y}{\partial t^2}\\
+	\frac{\partial^2y}{\partial t^2} & = \frac{\sigma}{\rho}\frac{\partial^2y}{\partial x^2}\\
+	\frac{\partial^2y}{\partial t^2} & = v^2\frac{\partial^2y}{\partial x^2}
+\end{align*}
+Hiermee zijn we de 1D golfvergelijking bekomen.
+\newpage
 \section*{Besluit}
 
 Afsluitende tekst.
