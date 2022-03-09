@@ -444,4 +444,50 @@ De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve
 	\caption{Twee extreme gevallen van interferentie.}
 	\label{fig:omegaVZ}
 \end{figure}\\
+
+\section{Afleiding 11}
+\textbf{Staande golven}\\
+Staande golven doen zich vaak voor bij muziek instrumenten zoals bijvoorbeeld de gitaar. Wiskundig kunnen we een staande golf als volgt voorstellen:
+\begin{align*}
+	y(x,t) &=y_msin(kx-\omega t)+y_msin(kx+\omega t)\\
+	y(x,t) &=\underbrace{2y_msin(kx)}_{A(x)}cos(\omega t)
+\end{align*}
+Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) ook vast gehouden worden, kunnen we ook volgende randvoorwaarden stellen:
+\begin{align*}
+	y(0,t)  &= 0 \Rightarrow sin(0)=0\\
+	y(L,t) &= 0 \Rightarrow sin(kL)=0
+\end{align*}
+We kunnen dus algemeen zeggen dat $k\cdot L$ altijd gelijk moet zijn aan een veelvoud van $\pi$ oftewel:
+\begin{align*}
+	kL & = m\pi (m\in\mathbb{N})\\
+	\frac{2\pi}{\lambda}L &=m\pi\\
+	\lambda & = \frac{2L}{m}
+\end{align*}
+\textbf{Eerste harmonische $(m = 1)$}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Eerste_harm}
+	\caption[Eerste harmonische]{Eerste harmonische}
+	\label{fig:eersteharm}
+\end{figure}\\
+$m = 1$ dus moet $\lambda = 2L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{2L}$.\\
+\newpage
+\textbf{Tweede harmonische $(m = 2)$}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Tweede_harm}
+	\caption[Tweede harmonische]{Tweede harmonische}
+	\label{fig:tweedeharm}
+\end{figure}\\
+$m = 2$ dus moet $\lambda = L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{L}$.\\
+\textbf{Derde harmonische $(m = 3)$}\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Derde_harm}
+	\caption[Derde harmonische]{Derde harmonische}
+	\label{fig:Derdeharm}
+\end{figure}\\
+$m = 3$ dus moet $\lambda = \frac{2}{3}L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{2v}{3L}$.\\
+
+
 \end{document}
