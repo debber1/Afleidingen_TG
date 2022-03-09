@@ -389,4 +389,20 @@ We kunnen ook iets zeggen over de voortplantingssnelheid $v$.
  \pm\frac{2\pi f}{\frac{2\pi}{\lambda}} & = v\\
  \pm \lambda f & = v
 \end{align*}
+\newpage
+\section{Afleiding 9}
+\textbf{Superpositie}\\
+We zeggen dat de algemene oplossing $y(x,t)$ van de golfvergelijking kan uitgedrukt worden door 2 nieuwe functies:
+\begin{equation*}
+	y(x,t) = y_1(x,t)+y_2(x,t)
+\end{equation*}
+We vullen dit opnieuw in in de golfvergelijking:
+\begin{align*}
+	\frac{\partial^2 y(x,t)}{\partial t^2} & = v^2 \frac{\partial^2 y(x,t)}{\partial x^2}\\
+	\frac{\partial^2 y_1(x,t)+y_2(x,t)}{\partial t^2} & = v^2 \frac{\partial^2 y_1(x,t)+y_2(x,t)}{\partial x^2}\\
+\end{align*}
+We gebruiken de lineariteit van de afgeleide:
+\begin{equation*}
+	\frac{\partial^2 y_1(x,t)}{\partial t^2} +\frac{\partial^2 y_2(x,t)}{\partial t^2}  = v^2(\frac{\partial^2 y_1(x,t)}{\partial x^2}+\frac{\partial^2 y_2(x,t)}{\partial x^2})
+\end{equation*}
 \end{document}
