@@ -133,7 +133,7 @@ plt.xlabel("Verplaatsing (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend(loc='lower right',labels=['y 2', 'y 1'])
 
-plt.savefig('Interferrentie.pdf')
+plt.savefig('Interferentie.pdf')
 
 plt.clf()
 xx = np.linspace(0,12,100)
@@ -148,7 +148,7 @@ plt.xlabel("Verplaatsing (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend(loc='lower right',labels=['y 2', 'y 1'])
 
-plt.savefig('Destructieve_interferrentie.pdf')
+plt.savefig('Destructieve_interferentie.pdf')
 
 plt.clf()
 xx = np.linspace(0,12,100)
@@ -165,4 +165,4 @@ plt.xlabel("Verplaatsing (m)")
 plt.ylabel("Amplitude (m)")
 plt.legend(loc='lower right',labels=['y 2', 'y 1', 'y 1 + y 2'])
 
-plt.savefig('Constructieve_interferrentie.pdf')
+plt.savefig('Constructieve_interferentie.pdf')
