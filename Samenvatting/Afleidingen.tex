@@ -312,6 +312,81 @@ We stellen dat $\alpha$ klein is, en dus kunnen we zeggen dat $sin(\alpha)\appro
 \end{align*}
 Hiermee zijn we de 1D golfvergelijking bekomen.
 \newpage
+\section{Afleiding 8}
+\textbf{Harmonische golven}\\
+Een voorstel voor de 1D golf vergelijking ziet er als volgt uit:
+\begin{equation*}
+	y(x,t) = y_msin(kx \pm \omega t +\varphi)
+\end{equation*}
+We kunnen deze oplossing invullen in de golfvergelijking:
+\begin{equation*}
+	-\omega^2y_msin(kx \pm \omega t +\varphi)=v^2k^2y_msin(kx \pm \omega t +\varphi)
+\end{equation*}
+Als we dit vereenvoudigen, krijgen we de voorwaarden waaraan een golf moet voldoen.
+\begin{align*}
+	v^2 & = \frac{\omega^2}{k^2}\\
+	v & = \pm\frac{\omega}{k}
+\end{align*}
+We kunnen nu een analyse doen op de golfvergelijking in het tijdsdomein:\\
+\textcolor{red}{PLACEHOLDER}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{touw_golf}
+	\caption[Tijdsdomein analyse]{Tijdsdomein analyse PLACEHOLDER}
+	\label{fig:tijdsdomein}
+\end{figure}\\
+We starten opnieuw met de algemene oplossing, maar dan op vaste plaats $x_1$:
+\begin{align}
+	y(x_1,t) &= y_msin(kx_1 \pm \omega t +\varphi)\\
+	\label{eq:tijdsanalyse1}
+	y(x_1,t) &= y_msin(\pm \omega t +\varphi_1)
+\end{align}
+met $\varphi_1 = kx_1 +\varphi$. We kunnen dit opnieuw doen voor $x_2$
+\begin{align}
+	y(x_2,t) &= y_msin(kx_2 \pm \omega t +\varphi)\\
+	\label{eq:tijdsanalyse2}
+	y(x_2,t) &= y_msin(\pm \omega t +\varphi_2)
+\end{align}
+We zien dus uit vergelijkingen \ref{eq:tijdsanalyse1} en \ref{eq:tijdsanalyse2}, dat er engel een fase verschuiving is. We vermelden ook nog dat oscillaties in fase zijn als $2\pi = k\lambda$.
 
-
+We doen ook de analyse doen op de golfvergelijking in de ruimte:\\
+\textcolor{red}{PLACEHOLDER}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{touw_golf}
+	\caption[Ruimtelijke analyse]{Ruimtelijke analyse PLACEHOLDER}
+	\label{fig:ruimtelijkeanalyse}
+\end{figure}\\
+We starten opnieuw met de algemene oplossing, maar dan op vast tijdstip $t_1$:
+\begin{align}
+	y(x,t_1) &= y_msin(kx \pm \omega t_1 +\varphi)\\
+	\label{eq:ruimteanalyse1}
+	y(x,t_1) &= y_msin(kx +\varphi_1)
+\end{align}
+met $\varphi_1 = \varphi \pm \omega t_1$. We stellen dit opnieuw op voor $t_2$
+\begin{align}
+	y(x,t_2) &= y_msin(kx \pm \omega t_2 +\varphi)\\
+	y(x,t_2) &= y_msin(kx \underbrace{\pm \omega t_1 +\varphi}_{\varphi_1}\pm\Delta t)\\
+	\label{eq:ruimteanalyse2}
+	y(x,t_2) &= y_msin(kx +\varphi_2)
+\end{align}
+met $\varphi_2 = \varphi_1\pm\Delta t$.
+uit de waarden van $\varphi_1$ en $\varphi_2$ kunnen we de voortplantingsrichting van de golf bepalen: 
+\begin{center}
+	\begin{tabular}{|c|c|}
+		\hline
+		$\varphi_1$ < $\varphi_2$& Golf naar rechts \\
+		\hline
+		$\varphi_1$ > $\varphi_2$& Golf naar links \\
+		\hline
+	\end{tabular} 
+\end{center}
+We kunnen ook iets zeggen over de voortplantingssnelheid $v$.
+\begin{align*}
+ v = \frac{dx_{max}}{dt} = \frac{d}{dt}(kx_{max} \pm \omega t +\varphi) &= 0\\
+ k\frac{dx_{max}}{dt}\pm \omega & = 0\\
+ \pm \frac{\omega}{k} & = v\\
+ \pm\frac{2\pi f}{\frac{2\pi}{\lambda}} & = v\\
+ \pm \lambda f & = v
+\end{align*}
 \end{document}
