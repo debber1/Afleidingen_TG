@@ -593,4 +593,83 @@ Uit vergelijking \ref{eq:Verplaatsing} en \ref{eq:Druk} kunnen we afleiden dat d
 	\label{fig:faseverschildrukverplaatsing}
 \end{figure}
 We zien hier duidelijk dat de druk na ijlt op de verplaatsing. 
+\newpage
+\section{Afleiding 16}
+\textbf{Staande golven in een open buis}\\
+We veronderstellen een open buis met lengte L. Als nevenvoorwaarde stellen we dat de druk aan de uiterste kanten van de buis gelijk is aan de atmosferische druk $P_{atm}$. We kijken eerst naar de drukverdeling in de buis:
+\begin{align*}
+	\Delta P_S (x,t) &= \Delta P_m sin(kx+\omega t) + \Delta P_m sin(kx-\omega t)\\
+	&= 2\Delta P_m sin(kx)cos(\omega t)
+\end{align*}
+Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Nu zullen we kijken naar de verplaatsing in de buis:
+\begin{align*}
+	D_S(x,t)&=Asin(kx+\omega t+\frac{\pi}{2})+Asin(kx-\omega t+\frac{\pi}{2})\\
+	&= 2Asin(kx+\frac{\pi}{2})cos(\omega t)
+\end{align*}
+Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.\\
+Enkele oplossingen zien er als volgt uit:\\
+
+\textbf{Eerste harmonische}\\
+Hierbij is $\lambda = 2L$ en $f=\frac{v}{2L}$.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisEersteDruk}
+		\caption{Drukverdeling}
+		\label{fig:EersteBuisDruk}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisEersteVerplaatsing}
+		\caption{Verplaatsing}
+		\label{fig:EersteBuisVerplaatsing}
+	\end{subfigure}
+	\caption{Druk en verplaatsing voor de eerste harmonische in een open buis}
+	\label{fig:OpenBuisEerste}
+\end{figure}
+\newpage
+\textbf{Tweede harmonische}\\
+Hierbij is $\lambda = L$ en $f=\frac{v}{L}$.
+
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisTweedeDruk}
+		\caption{Drukverdeling}
+		\label{fig:TweedeBuisDruk}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisTweedeVerplaatsing}
+		\caption{Verplaatsing}
+		\label{fig:TweedeBuisVerplaatsing}
+	\end{subfigure}
+	\caption{Druk en verplaatsing voor de tweede harmonische in een open buis}
+	\label{fig:OpenBuisTweede}
+\end{figure}
+
+\textbf{Derde harmonische}\\
+Hierbij is $\lambda = \frac{2L}{3}$ en $f=\frac{3v}{2L}$.
+
+\begin{figure}[!h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisDerdeDruk}
+		\caption{Drukverdeling}
+		\label{fig:DerdeBuisDruk}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{OpenBuisDerdeVerplaatsing}
+		\caption{Verplaatsing}
+		\label{fig:DerdeBuisVerplaatsing}
+	\end{subfigure}
+	\caption{Druk en verplaatsing voor de derde harmonische in een open buis}
+	\label{fig:OpenBuisDerde}
+\end{figure}
+
 \end{document}
