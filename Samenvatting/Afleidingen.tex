@@ -768,5 +768,33 @@ De nieuwe frequentie is dan $f'=\frac{f}{1\pm\frac{v_{bron}}{v_s}}$.
 	\end{tabular}
 	
 \end{center}
-
+\newpage
+\section{Afleiding 21}
+\textbf{Basiswetten voor elektromagnetische golven}\\
+\paragraph{Wet van Ampère}
+\begin{equation*}
+	\oint\vec{B}\vec{dl}=\mu I_{\text{lus}}+\mu_0\epsilon_0\frac{d\Phi_E}{dt}
+\end{equation*}
+waarbij $\Phi_E$ de elektrische flux is:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\linewidth]{ElektrischVeld}
+	\caption[Elektrisch veld]{Elektrisch veld}
+	\label{fig:elektrischveld}
+\end{figure}
+\begin{align*}
+	\Phi_E &= E_{\perp}A\\
+	&= Ecos(\theta)A\\
+	&= \vec{E}\cdot\vec{A}\text{(Scalair product)}
+\end{align*}
+\paragraph{Wetten van maxwell}
+\begin{align}
+	\oint\vec{E}\vec{dA}&=\frac{Q}{\epsilon_0}\\
+	\oint\vec{B}\vec{dA}&=0\\
+	\label{eq:faraday}
+	\oint\vec{E}\vec{dl}&=-\frac{\partial\Phi_B}{\partial t}\\
+	\label{eq:maxwell}
+	\oint\vec{B}\vec{dl}&=\mu\epsilon_0\frac{\partial\Phi_E}{\partial t}
+\end{align}
+waarbij vergelijking \ref{eq:faraday} en \ref{eq:maxwell} invloed hebben op elektromagnetische golven.
 \end{document}
