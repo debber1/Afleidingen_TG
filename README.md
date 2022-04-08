@@ -7,3 +7,5 @@ Feel free to help by making an issue or a PR.
 - A KULeuven (KULAK) document class is used for the layout.
 - Graphs are made using Python and matplotlib.
 
+# Contributors
+[Sodir Yuksel](https://github.com/sydon1)
