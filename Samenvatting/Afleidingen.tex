@@ -29,12 +29,13 @@
 
 De afleidingen voor trillingen en golven. \href{https://github.com/debber1/Afleidingen_TG}{De source code is te vinden op github.}\\
 https://github.com/debber1/Afleidingen\_TG\\
-Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het examen. Ik ben niet verantwoordelijk voor jou resultaat op jouw examen. Het is jouw verantwoordelijkheid om ook nog de andere onderdelen van deze cursus op een degelijke manier te verwerken. \\
+Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het examen. Ik ben niet verantwoordelijk voor jouw resultaat op jouw examen. Het is jouw verantwoordelijkheid om ook nog de andere onderdelen van deze cursus op een degelijke manier te verwerken. \\
 %DEZE ZIN IS ENKEL RELEVANT TIJDENS DE ONTWIKKELING VAN DIT DOCUMENT
 \textbf{Dit document is een `work in progress', dit wil zeggen dat er (ongeveer) een wekelijkse update zal zijn. De meest recente versie zal altijd op Github staan!}
 
 \section*{Contributors}
-\href{https://github.com/sydon1}{Sodir Yuksel}
+\href{https://github.com/sydon1}{Sodir Yuksel} \\
+\href{https://github.com/ItsAlphie}{Jonathan Valgaeren}
 
 \section{Afleiding 1}
 
@@ -56,7 +57,7 @@ We stellen eerst de tweede wet van Newton op voor het blokje M uit figuur \ref{f
 \begin{equation*}
 	\sum \vec{F} = m\vec{a}
 \end{equation*}
-We kijken nu enkel naar de x-component, en brengen we de kracht van de veer in rekening:
+We kijken nu enkel naar de x-component en brengen de kracht van de veer in rekening:
 \begin{equation*}
 	-kx = m\frac{d^2x}{dt^2}
 \end{equation*}
@@ -71,12 +72,12 @@ Wiskundig vertaalt dit zich tot:
 	x(t) = A cos(\omega t + \varphi)
 	\label{eq:trilling}
 \end{equation}
-we kunnen vergelijking \ref{eq:trilling} afleiden om de snelheid van het blokje te verkrijgen: 
+We kunnen vergelijking \ref{eq:trilling} een eerste keer afleiden om de snelheid van het blokje te verkrijgen: 
 \begin{equation}
 	v(t) = \frac{dx(t)}{dt} = -\omega Asin(\omega t + \varphi)
 	\label{eq:trillingsnelheid}
 \end{equation}
-Door nogmaals vergelijking \ref{eq:trillingsnelheid} nogmaals af te leiden kunnen we ook de versnelling van het blokje verkrijgen:
+Door vergelijking \ref{eq:trilling} nogmaals af te leiden, kunnen we ook de versnelling van het blokje verkrijgen:
 \begin{equation}
 	a(t) = \frac{d^2x(t)}{dt^2} = -\omega^2 Acos(\omega t + \varphi)
 	\label{eq:trillingversnelling}
@@ -108,7 +109,7 @@ Er zijn 2 vormen van energie aanwezig in een massa-veer-systeem. We hebben de po
 	E(x) = & \frac{1}{2} k A^2 (cos^2(\omega t +\varphi) + sin^2(\omega t + \varphi))\\
 	E(x) = & \frac{1}{2} k A^2
 \end{align*} 
-We zien nu duidelijk dat de hoeveelheid energie niet afhankelijk is van de uitwijking van de massa. Met andere woorden, de energie blijft constant in het systeem (Figuur \ref{fig:energiebalans}).
+We zien nu duidelijk dat de hoeveelheid energie niet afhankelijk is van de uitwijking van de massa. Met andere woorden: de energie blijft constant in het systeem (figuur \ref{fig:energiebalans}).
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Energie_Balans}
@@ -160,7 +161,7 @@ Uit vergelijking \ref{eq:snelheid_positie} kunnen we nu ook afleiden wat de uitd
 	\includegraphics[width=0.5\linewidth]{Pendulum}
 	\caption[Pendulum]{Pendulum}
 	\label{fig:pendulum}
-\end{figure}
+\end{figure} \\
 De drijvende kracht van de pendulum is gelijk aan:
 \begin{equation*}
 	F = -mg sin(\theta)
@@ -192,7 +193,7 @@ Hierbij zien we dat $\omega = \sqrt{\frac{g}{l}}$.
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\linewidth]{DempingVeer}
-	\caption[Gedempt massa veer systeem]{Gedempt massa veer systeem}
+	\caption[Gedempt massa veer systeem]{Gedempt massa-veer-systeem}
 	\label{fig:dempingveer}
 \end{figure}
 We beginnen met de bewegingsvergelijking op te stellen:
@@ -346,13 +347,13 @@ We starten opnieuw met de algemene oplossing, maar dan op vaste plaats $x_1$:
 	\label{eq:tijdsanalyse1}
 	y(x_1,t) &= y_msin(\pm \omega t +\varphi_1)
 \end{align}
-met $\varphi_1 = kx_1 +\varphi$. We kunnen dit opnieuw doen voor $x_2$
+met $\varphi_1 = kx_1 +\varphi$. We kunnen dit opnieuw doen voor $x_2$:
 \begin{align}
 	y(x_2,t) &= y_msin(kx_2 \pm \omega t +\varphi)\\
 	\label{eq:tijdsanalyse2}
 	y(x_2,t) &= y_msin(\pm \omega t +\varphi_2)
 \end{align}
-We zien dus uit vergelijkingen \ref{eq:tijdsanalyse1} en \ref{eq:tijdsanalyse2}, dat er engel een fase verschuiving is. We vermelden ook nog dat oscillaties in fase zijn als $2\pi = k\lambda$.
+met $\varphi_2 = kx_2 +\varphi$. Uit vergelijkingen \ref{eq:tijdsanalyse1} en \ref{eq:tijdsanalyse2} stellen we vast dat er enkel een fase verschuiving is. We vermelden ook nog dat oscillaties in fase zijn als $2\pi = k\lambda$.
 \newpage
 We doen ook de analyse doen op de golfvergelijking in de ruimte:\\
 \begin{figure}[h]
@@ -375,7 +376,7 @@ met $\varphi_1 = \varphi \pm \omega t_1$. We stellen dit opnieuw op voor $t_2$
 	y(x,t_2) &= y_msin(kx +\varphi_2)
 \end{align}
 met $\varphi_2 = \varphi_1\pm\Delta t$.
-uit de waarden van $\varphi_1$ en $\varphi_2$ kunnen we de voortplantingsrichting van de golf bepalen: 
+Uit de waarden van $\varphi_1$ en $\varphi_2$ kunnen we de voortplantingsrichting van de golf bepalen: 
 \begin{center}
 	\begin{tabular}{|c|c|}
 		\hline
@@ -423,15 +424,13 @@ Interferentie doet zich voor als er meerdere verschillende golven aanwezig zijn 
 	\caption[Interferentie]{Golven $y_1$ en $y_2$ die zullen interfereren}
 	\label{fig:interferentie}
 \end{figure}\\
-We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien:
+We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}:
 \begin{align*}
 	y & = y_1+y_2\\
 	y & = y_msin(kx\pm\omega t) y_m+sin(kx\pm\omega t +\phi)\\
 	y & = \underbrace{2y_mcos(\frac{\phi}{2})}_{A = f(\phi)}sin(kx+\omega t+\frac{\phi}{2})
-\end{align*}
-Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.
-
-De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve-interferentie. Bij destructieve, zullen de golven elkaar tegen werken zodat de beweging stopt (zie figuur \ref{fig:destructief}). Constructieve interferentie zal ervoor zorgen dat de resulterende golf groter wordt (zie figuur \ref{fig:constructief}).
+\end{align*} \\
+De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve-interferentie. Bij destructieve zullen de golven elkaar tegen werken zodat de beweging stopt (zie figuur \ref{fig:destructief}). Constructieve interferentie zal ervoor zorgen dat de resulterende golf groter wordt (zie figuur \ref{fig:constructief}).
 \begin{figure}[h]
 	\centering
 	\begin{subfigure}{.5\textwidth}
@@ -452,12 +451,12 @@ De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve
 
 \section{Afleiding 11}
 \textbf{Staande golven}\\
-Staande golven doen zich vaak voor bij muziek instrumenten zoals bijvoorbeeld de gitaar. Wiskundig kunnen we een staande golf als volgt voorstellen:
+Staande golven doen zich vaak voor bij muziek instrumenten zoals de gitaar. We een staande golf als volgt wiskundig voorstellen:
 \begin{align*}
 	y(x,t) &=y_msin(kx-\omega t)+y_msin(kx+\omega t)\\
 	y(x,t) &=\underbrace{2y_msin(kx)}_{A(x)}cos(\omega t)
 \end{align*}
-Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) ook vast gehouden worden, kunnen we ook volgende randvoorwaarden stellen:
+Hierbij gebruiken we wederom de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) vast gehouden worden, kunnen we volgende randvoorwaarden stellen:
 \begin{align*}
 	y(0,t)  &= 0 \Rightarrow sin(0)=0\\
 	y(L,t) &= 0 \Rightarrow sin(kL)=0
@@ -475,7 +474,7 @@ We kunnen dus algemeen zeggen dat $k\cdot L$ altijd gelijk moet zijn aan een vee
 	\caption[Eerste harmonische]{Eerste harmonische}
 	\label{fig:eersteharm}
 \end{figure}\\
-$m = 1$ dus moet $\lambda = 2L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{2L}$.\\
+Hierbij is $m = 1$ dus moet $\lambda = 2L$ en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{2L}$.\\
 \newpage
 \textbf{Tweede harmonische $(m = 2)$}\\
 \begin{figure}[h]
@@ -484,7 +483,7 @@ $m = 1$ dus moet $\lambda = 2L$, en de frequentie is dan $f = \frac{v}{\lambda} 
 	\caption[Tweede harmonische]{Tweede harmonische}
 	\label{fig:tweedeharm}
 \end{figure}\\
-$m = 2$ dus moet $\lambda = L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{L}$.\\
+Hierbij is $m = 2$ dus moet $\lambda = L$ en de frequentie is dan $f = \frac{v}{\lambda} = \frac{v}{L}$.\\
 \textbf{Derde harmonische $(m = 3)$}\\
 \begin{figure}[h]
 	\centering
@@ -492,10 +491,10 @@ $m = 2$ dus moet $\lambda = L$, en de frequentie is dan $f = \frac{v}{\lambda} =
 	\caption[Derde harmonische]{Derde harmonische}
 	\label{fig:Derdeharm}
 \end{figure}\\
-$m = 3$ dus moet $\lambda = \frac{2}{3}L$, en de frequentie is dan $f = \frac{v}{\lambda} = \frac{3v}{2L}$.\\
+Hierbij is $m = 3$ dus moet $\lambda = \frac{2}{3}L$ en de frequentie is dan $f = \frac{v}{\lambda} = \frac{3v}{2L}$.\\
 \newpage
 \section{Afleiding 12}
-\textbf{Energie transport in een golf.}\\
+\textbf{Energie transport in een golf}\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{EnergieGolf}
@@ -515,7 +514,7 @@ We kunnen $dm$ herschrijven als $dm = \rho sdx = \rho sdtv$:
 	dE &= 2\pi^2f^2A^2\rho Svdt\\
 	\frac{dE}{dt} &= 2\pi^2f^2A^2\rho Sv = P
 \end{align*}
-We krijgen nu dus het vermogen van de golf. We kunnen hieruit nu ook nog de intensiteit $I$ halen:
+We bekomen het vermogen van de golf. We kunnen hieruit vervolgens de intensiteit $I$ halen:
 \begin{equation*}
 	I = \frac{P}{S} = 2\pi^2f^2A^2\rho v
 \end{equation*}
@@ -525,10 +524,10 @@ We krijgen nu dus het vermogen van de golf. We kunnen hieruit nu ook nog de inte
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{EigenschappenGeluid}
-	\caption[Zuiger]{Drukgolf in een zuiger.}
+	\caption[Zuiger]{Drukgolf in een zuiger}
 	\label{fig:drukgolfzuiger}
 \end{figure}\\
-Met $v'$ de snelheid van de zuiger en $v$ de geluidsnelheid, kunnen we stellen dat:
+Met $v'$ de snelheid van de zuiger en $v$ de geluidsnelheid kunnen we stellen dat:
 \begin{align*}
 	V_0 &=Sv\Delta t\\
 	\Delta V &= -Sv'\Delta t
@@ -551,13 +550,13 @@ Als we rekening houden met het feit dat $dm=\rho V_0$ kunnen we met behulp van i
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{WiskundigeBeschrijving}
-	\caption[Drukgolven]{Drukgolven in een buis.}
+	\caption[Drukgolven]{Drukgolven in een buis}
 	\label{fig:drukgolvenbuis}
 \end{figure}\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Drukinbuis}
-	\caption[Drukgolven]{Drukgolven in een buis.}
+	\caption[Drukgolven]{Drukgolven in een buis}
 	\label{fig:drukgolvenbuisgrafiek}
 \end{figure}\\
 
@@ -567,7 +566,7 @@ Met de compressie- of bulk-modulus $B = \frac{\Delta P}{\frac{\Delta V}{V_0}}$ k
 	\Delta P &= -B \frac{\Delta DS}{\Delta xS}\\
 	\Delta P &= -B \frac{\partial D}{\partial x}
 \end{align*}
-We geven een voorstel voor $D$, $D = \Delta sin(kx\pm \omega t)$
+We geven een voorstel voor $D$: $D = \Delta sin(kx\pm \omega t)$
 \begin{align*}
 	\Delta P &= -BAkcos(kx\pm \omega t)\\
 	&= -\rho v^2Akcos(kx\pm \omega t)\\
@@ -604,12 +603,12 @@ We veronderstellen een open buis met lengte L. Als nevenvoorwaarde stellen we da
 	\Delta P_S (x,t) &= \Delta P_m sin(kx+\omega t) + \Delta P_m sin(kx-\omega t)\\
 	&= 2\Delta P_m sin(kx)cos(\omega t)
 \end{align*}
-Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Nu zullen we kijken naar de verplaatsing in de buis:
+Hierbij gebruiken we de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Vervolgens kijken we naar de verplaatsing in de buis:
 \begin{align*}
 	D_S(x,t)&=Asin(kx+\omega t+\frac{\pi}{2})+Asin(kx-\omega t+\frac{\pi}{2})\\
 	&= 2Asin(kx+\frac{\pi}{2})cos(\omega t)
 \end{align*}
-Hierbij werd gebruikt gemaakt van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.\\
+Hierbij gebruiken we nogmaals de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.\\
 Enkele oplossingen zien er als volgt uit:\\
 
 \textbf{Eerste harmonische}\\
@@ -698,7 +697,7 @@ We kunnen opnieuw enkele randvoorwaarden stellen:
 \begin{equation*}
 	D_s(L,t)=0\Rightarrow kl+\frac{\pi}{2} = \pi
 \end{equation*}
-Dit wil zegen dat:
+Dit wil zeggen dat:
 \begin{equation*}
 	k=\frac{\pi}{2L}=\frac{2\pi}{\lambda}\Rightarrow \lambda=4L \wedge f=\frac{v}{4L}
 \end{equation*}
@@ -706,13 +705,13 @@ We kunnen ook een tweede nevenvoorwaarde opstellen:
 \begin{equation*}
 	kL+\frac{\pi}{2}=2\pi
 \end{equation*}
-Dit wil zegen dat:
+Dit wil zeggen dat:
 \begin{equation*}
 	k=\frac{3\pi}{2L}=\frac{2\pi}{\lambda}\Rightarrow \lambda=\frac{4L}{3} \wedge f=\frac{3v}{4L}
 \end{equation*}
 \newpage
 \section{Afleiding 18}
-\textbf{Interferentie van geluids-golven}\\
+\textbf{Interferentie van geluidsgolven}\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.3\linewidth,angle=90]{InterferentieSpeakers}
@@ -730,23 +729,23 @@ We kunnen de druk beschrijven als:
 	\Delta P_1 &= \Delta P_msin(kL_1\pm\omega t)\\
 	\Delta P_2 &= \Delta P_msin(kL_2\pm\omega t)
 \end{align*}
-Door beiden op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
 \begin{equation*}
 	\Delta P = 2\Delta P_msin(k\frac{L_1+L_2}{2}\pm\omega t)cos(k\frac{L_1-L_2}{2})
 \end{equation*}
-We onderscheiden 2 soorten interferentie zoals te zien is op figuur \ref{fig:interferentiespeakers}. Constructieve interferentie (groen) en destructieve interferentie (rood).
+We onderscheiden 2 soorten interferentie zoals te zien in figuur \ref{fig:interferentiespeakers}. Constructieve interferentie (groen) en destructieve interferentie (rood).
 
 Bij constructieve interferentie is $\frac{k\Delta L}{2}=0,\pi,2\pi,\ldots$ Dit wil zeggen dat $\Delta L$ moet voldoen aan $\Delta L = 0,\lambda,2\lambda,\ldots$. Destructieve interferentie doet zich voor als $\frac{k\Delta L}{2}=\frac{\pi}{2},\frac{3\pi}{2},\ldots$. $\Delta L$ moet hier dus voldoen aan $\Delta L = \frac{\lambda}{2},\frac{3\lambda}{2},\ldots$.
 
 \newpage
 \section{Afleiding 19}
 \textbf{Kloppen van een golf}\\
-Als 2 golven een frequentie hebben die zeer dicht bij elkaar liggen, krijgen we kloppingen. We kunnen de druk van beide golven voorstellen als:
+Als 2 golven frequenties hebben die zeer dicht bij elkaar liggen, krijgen we kloppingen. We kunnen de druk van beide golven voorstellen als:
 \begin{align*}
 	D_1&=Asin(2\pi f_1t)\\
 	D-2&=Asin(2\pi f_2t)
 \end{align*}
-Door beiden op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
 \begin{equation*}
 	D=2Acos(2\pi\frac{f_1-f_2}{2}t)sin(2\pi\frac{f_1+f_2}{2}t)
 \end{equation*}
@@ -756,7 +755,7 @@ Hierbij vermelden we ook nog dat als $f_1\approx f_2\Rightarrow\Delta\omega=\fra
 \newpage
 \section{Afleiding 20}
 \textbf{Doppler effect}\\
-Het doppler effect doet zich voor als de bron en waarnemer van een geluid niet stil staan tegenover elkaar. We analyseren nu het geval waarin de bron beweegt. Als de bron naar rechts beweegt,  zal een waarnemer die zich links bevindt een lagere frequentie waarnemen. Een waarnemer die rechts staat, zal daarentegen een hogere frequentie waarnemen. deze nieuwe frequentie heet $\lambda'$. Wiskundig kunnen we $\lambda'$ bepalen met volgende redenering:
+Het doppler effect doet zich voor als de bron en waarnemer van een geluid in beweging zijn tegenover elkaar. We analyseren nu het geval waarin de bron beweegt: als de bron naar rechts beweegt,  zal een waarnemer die zich links bevindt een lagere frequentie waarnemen. Een waarnemer die rechts staat, zal daarentegen een hogere frequentie waarnemen. De nieuwe frequentie heet $\lambda'$. Wiskundig kunnen we $\lambda'$ bepalen met volgende redenering:
 \begin{equation*}
 	\lambda'=\lambda\pm v_{bron}T=\lambda\pm v_{bron}\frac{\lambda}{v_s}=\lambda(1\pm\frac{v_{bron}}{v_s})
 \end{equation*}
@@ -788,7 +787,7 @@ waarbij $\Phi_E$ de elektrische flux is:
 \begin{align*}
 	\Phi_E &= E_{\perp}A\\
 	&= Ecos(\theta)A\\
-	&= \vec{E}\cdot\vec{A}\text{(Scalair product)}
+	&= \vec{E}\cdot\vec{A}\quad\text{(Scalair product)}
 \end{align*}
 \paragraph{Wetten van maxwell}
 \begin{align}
@@ -810,7 +809,7 @@ Men kan elektromagnetische golven genereren door twee platen naast elkaar te zet
 	\caption[Generatie]{Generatie EM golf}
 	\label{fig:emgolf1}
 \end{figure}\\
-Als de spanningsbron van polariteit veranderd, veranderen ook de velden van richting zoals in figuur \ref{fig:emgolf2}. Hier kunnen we tevens ook zien hoe de golf zich voortplant in de ruimte, na verloop van tijd zullen de golven een lineair karakter krijgen. 
+Als de spanningsbron van polariteit veranderd, veranderen ook de velden van richting zoals in figuur \ref{fig:emgolf2}. Hier kunnen we tevens ook zien hoe de golf zich voortplant in de ruimte: na verloop van tijd zullen de golven een lineair karakter krijgen. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{EMGolf2}
