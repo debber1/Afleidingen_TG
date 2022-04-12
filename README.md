@@ -9,3 +9,4 @@ Feel free to help by making an issue or a PR.
 
 # Contributors
 [Sodir Yuksel](https://github.com/sydon1)
+[Jonathan Valgaeren](https://github.com/ItsAlphie)
