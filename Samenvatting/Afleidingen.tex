@@ -837,4 +837,63 @@ In figuur \ref{fig:an-electromagnetic-wave} kunnen we stellen dat:
 	\vec{E} &= E_msin(kx-\omega t)\vec{j}\\
 	\vec{B} &= B_msin(kx-\omega t)\vec{k}
 \end{align*}
+
+\newpage
+\section{Afleiding ...}
+\textbf{Afleiding van de werking van een sferische spiegel voor verschillende posities van het object}\\
+We bespreken eerst de situatie waarbij een object tussen C en f staat, zoals te zien is in figuur \ref{fig:objecttussen}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{ObjectTussen}
+	\caption[Object tussen C en f]{Object tussen C en f}
+	\label{fig:objecttussen}
+\end{figure}\\
+We zoeken een waarde voor $d_I$, daarvoor gebruiken we de geometrie van de driehoeken O'OA en IAI'.  We weten dus dat: 
+\begin{align*}
+	\Delta O'OA&\Rightarrow tan(\theta) = \frac{|OO'|}{d_O}\\
+	\Delta IAI'&\Rightarrow tan(\theta) = \frac{|II'|}{d_I}
+\end{align*}
+Hieruit leiden we af dat de versterking $m$ gelijk is aan :
+\begin{equation*}
+	\frac{h_O}{d_O} = \frac{h_I}{d_I} = |m|
+\end{equation*}
+Om nu de afstand $d_I$ te vinden kunnen de twee congruente driehoeken die in het geel aangeduid staan op figuur \ref{fig:objecttussen} gebruiken. Voor deze driehoeken geldt dat: 
+\begin{equation*}
+	\frac{|OO'|}{|Of|}=\frac{|AB'|}{|Af|} \approx\frac{|AB'|}{f} \Rightarrow \frac{h_O}{d_0-f} = \frac{h_I}{f}
+\end{equation*}
+Dit kunnen we verder uitwerken tot:
+\begin{equation*}
+	\frac{h_O}{h_I} = \frac{d_O-f}{f}=\frac{d_O}{d_I}\Rightarrow\frac{1}{f}-\frac{1}{d_O} = \frac{1}{d_I}
+\end{equation*}
+\newpage
+We bespreken nu de situatie waarbij het object tussen f en de spiegel staat, zoals te zien is in figuur \ref{fig:objectspiegelf}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{ObjectSpiegelF}
+	\caption[Object tussen f en spiegel]{Object tussen f en spiegel}
+	\label{fig:objectspiegelf}
+\end{figure}\\
+We proberen opnieuw om de afstand $d_I$ te bepalen aan de hand van driehoeken.
+\begin{align*}
+	\Delta fBA&\Rightarrow tan(\theta)=\frac{|AB|}{f}\approx\frac{h_O}{f}\\
+	\Delta fII'&\Rightarrow tan(\theta)= \frac{h_I}{f+d_I}
+\end{align*}
+Hieruit volgt dat:
+\begin{equation*}
+	\frac{h_0}{h_I}=\frac{f}{f+d_I}
+\end{equation*}
+We kijken nog naar 2 andere driehoeken
+\begin{align*}
+	\Delta CII'&\Rightarrow tan(\theta)= \frac{h_I}{2f+d_I}\\
+	\Delta COO'&\Rightarrow tan(\theta)= \frac{h_O}{2f-d_O}
+\end{align*}
+Hieruit volgt dat:
+\begin{equation*}
+	\frac{h_0}{h_I}=\frac{2f-d_O}{2f+d_I}
+\end{equation*}
+We kunnen dus stellen dat:
+\begin{align*}
+	\frac{f}{f+d_I}&=\frac{2f-d_O}{2f+d_I}\\
+	\frac{1}{d_O} &= \frac{1}{f}+\frac{1}{d_I}
+\end{align*}
 \end{document}
