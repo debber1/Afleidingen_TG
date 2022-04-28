@@ -372,3 +372,43 @@ plt.axvline(12,0,1,color='k')
 plt.xlabel("Positie (m)")
 plt.ylabel("Snelheid ifv Positie (m/s)")
 plt.savefig("HalfOpenBuisEersteSnelheid.pdf")
+
+plt.clf()
+xx = np.linspace(0,np.pi*4,100)
+def f(x): return np.sin(x)
+plt.plot (xx,f(xx),'r',lw=1)
+plt.yticks([])
+plt.xticks([])
+plt.hlines(0,np.pi*4,0,'k')
+
+
+plt.axvline(x=np.pi*2-0.8, ymin= 0.045, ymax = 0.955, color='k', lw=1)
+plt.axvline(x=np.pi*2+0.15, ymin= 0.045, ymax = 0.955, color='k', lw=1)
+plt.hlines(-1,np.pi*2+0.15,np.pi*2-0.8,'k')
+plt.hlines(1,np.pi*2+0.15,np.pi*2-0.8,'k')
+plt.text(np.pi+np.pi-1, 0.03, 'h')
+plt.text(np.pi+np.pi-0.50, 1.03, 'dx')
+
+plt.xlabel("Positie (m)")
+plt.ylabel("Electrisch veld E")
+plt.savefig("FaradayGolf.pdf")
+
+plt.clf()
+xx = np.linspace(0,np.pi*4,100)
+def f(x): return np.sin(x)
+plt.plot (xx,f(xx),'r',lw=1)
+plt.yticks([])
+plt.xticks([])
+plt.hlines(0,np.pi*4,0,'k')
+
+
+plt.axvline(x=np.pi*2-0.8, ymin= 0.045, ymax = 0.955, color='k', lw=1)
+plt.axvline(x=np.pi*2+0.15, ymin= 0.045, ymax = 0.955, color='k', lw=1)
+plt.hlines(-1,np.pi*2+0.15,np.pi*2-0.8,'k')
+plt.hlines(1,np.pi*2+0.15,np.pi*2-0.8,'k')
+plt.text(np.pi+np.pi-1, 0.03, 'h')
+plt.text(np.pi+np.pi-0.50, 1.03, 'dx')
+
+plt.xlabel("Positie (m)")
+plt.ylabel("Magnetisch veld B")
+plt.savefig("MaxwellGolf.pdf")

@@ -24,7 +24,7 @@
 \begin{document}
 
 \maketitle
-
+\section*{Dedicated to Rebecca}
 \section*{Inleiding}
 
 De afleidingen voor trillingen en golven. \href{https://github.com/debber1/Afleidingen_TG}{De source code is te vinden op github.}\\
@@ -50,7 +50,7 @@ Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het exam
 	\centering
 	\includegraphics[width=0.7\linewidth]{Harmonische_Oscillator}
 	\caption[Harmonische Oscillator]{Harmonische Oscillator}
-	\label{fig:harmonischeoscilator}
+	\label{fig:harmonischeoscilator}als dit het punt nie over brengt, weet ik het ook niet meer :p
 \end{figure}
 
 We stellen eerst de tweede wet van Newton op voor het blokje M uit figuur \ref{fig:massaveer}.
@@ -837,9 +837,104 @@ In figuur \ref{fig:an-electromagnetic-wave} kunnen we stellen dat:
 	\vec{E} &= E_msin(kx-\omega t)\vec{j}\\
 	\vec{B} &= B_msin(kx-\omega t)\vec{k}
 \end{align*}
+\newpage
+\section{Afleiding 24}
+\textbf{Opstellen van de golfvergelijking van een elektromagnetische golf}\\
+\textbf{Wet van Faraday}\\
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{FaradayGolf}
+		\caption[Elektrische golf]{Elektrische golf}
+		\label{fig:faradaygolf}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{InzoomFaraday}
+		\caption[Inzoom Faraday]{Uitvergroting}
+		\label{fig:inzoomfaraday}
+	\end{subfigure}
+	\caption{Wet van Faraday}
+	\label{fig:InductieFaraday}
+\end{figure}\\
+
+We berekenen de verandering in het elektrische flux van een golf. We definiëren hiervoor een gesloten kring zoals te zien is in figuur \ref{fig:faradaygolf}. We nemen dx zo klein mogelijk, zodat we de golf op dit kleine interval als lineair kunnen aannemen. We zien deze linearisering in figuur \ref{fig:inzoomfaraday}. Hierdoor wordt het effectief elektrisch veld gereduceerd tot de twee dikke lijnen op de linker en rechter zijde van de rechthoek. Deze zijn respectievelijk gelijk aan:
+\begin{align*}
+	\vec{E_L} &= \vec{E}-\frac{\partial\vec{E}}{\partial x}\frac{dx}{2}\\
+	\vec{E_R} &= \vec{E}+\frac{\partial\vec{E}}{\partial x}\frac{dx}{2}	
+\end{align*}
+Door de wet van Faraday $-\frac{\partial\Phi_B}{\partial t}= \oint\vec{E}\cdot\vec{dS}$ toe te passen op alle 4 de zijden van de rechthoek:
+\begin{equation*}
+	\oint\vec{E}\cdot\vec{dS} = \underbrace{E+\frac{\partial E}{\partial x}\frac{dx}{2}h}_1 + \underbrace{0}_2 +\underbrace{E-\frac{\partial E}{\partial x}\frac{dx}{2}h}_3 + \underbrace{0}_4
+\end{equation*}
+Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen tot (met de wet van Faraday):
+\begin{align}
+	 \frac{\partial E}{\partial x}hdx &= -\frac{\partial B}{\partial t}hdx\\
+	 \label{eq:inductieFaraday}
+	 \frac{\partial E}{\partial x} &= -\frac{\partial B}{\partial t}
+\end{align}
+\newpage
+\textbf{Wet van Maxwell}\\
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=1\linewidth]{MaxwellGolf}
+		\caption[Golf Maxwell]{Magnetische golf}
+		\label{fig:maxwellgolf}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{InzoomMaxwell}
+		\caption[Inzoom maxwell]{Uitvergroting}
+		\label{fig:inzoommaxwell}
+	\end{subfigure}
+	\caption{Wet van Maxwell}
+	\label{fig:InductieMaxwell}
+\end{figure}
+We maken opnieuw dezelfde redenering als voor de afleiding met de wet van Faraday, we merken wel op dat we nu met een magnetisch veld werken en dat we gebruik maken van de wet van Maxwell ($\mu_0\epsilon_0\frac{\partial \Phi_E}{\partial t}=\oint\vec{B}\cdot\vec{dS}$). De twee dikke lijnen kunnen we hierdoor definiëren als:
+\begin{align*}
+	\vec{B_L} &= \vec{B}-\frac{\partial\vec{B}}{\partial x}\frac{dx}{2}\\
+	\vec{B_R} &= \vec{B}+\frac{\partial\vec{B}}{\partial x}\frac{dx}{2}	
+\end{align*}
+We passen de wet van Maxwell toe op de randen van de gesloten kring:
+\begin{equation*}
+	\oint\vec{B}\cdot\vec{dS} = \underbrace{B-\frac{\partial B}{\partial x}\frac{dx}{2}h}_1 + \underbrace{0}_2 +\underbrace{B+\frac{\partial B}{\partial x}\frac{dx}{2}h}_3 + \underbrace{0}_4
+\end{equation*}
+Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen tot (met de wet van Maxwell):
+\begin{align}
+	-\frac{\partial E}{\partial x}hdx &= \mu_0\epsilon_0\frac{\partial E}{\partial t}hdx\\
+	\label{eq:inductieMaxwell}
+	-\frac{\partial E}{\partial x} &= \mu_0\epsilon_0\frac{\partial B}{\partial t}
+\end{align}
+\newpage
+\textbf{Opstellen van de golfvergelijking met de inductie wetten}\\
+We werken nu verder met vergelijking \ref{eq:inductieFaraday} en \ref{eq:inductieMaxwell}. We leiden eerst vergelijking \ref{eq:inductieFaraday} af naar de tijd om volgende uitdrukking te krijgen:
+\begin{equation}
+	\label{eq:DubbelFaraday}
+	\frac{\partial^2E}{\partial t\partial x} = \frac{\partial^2B}{\partial t^2}
+\end{equation}
+We leiden nu ook vergelijking \ref{eq:inductieMaxwell} af maar dit keer naar de ruimte:
+\begin{equation}
+	\label{eq:DubbelMaxwell}
+	-\frac{\partial^2B}{\partial x^2} = \mu_0\epsilon_0\frac{\partial^2E}{\partial t\partial x}
+\end{equation}
+We kunnen nu vergelijking \ref{eq:DubbelFaraday} en \ref{eq:DubbelMaxwell} samenbrengen om de golfvergelijking op te stellen:
+\begin{equation*}
+	\frac{\partial^2B}{\partial t^2}=\frac{1}{\mu_0\epsilon_0}\frac{\partial^2B}{\partial t^2}
+\end{equation*}
+Hierbij vermelden we nog dat $c^2=\frac{1}{\mu_0\epsilon_0}$.
+\newpage
+\section{Afleiding 27}
+\text{Energie van een elektro magnetische golf}\\
 
 \newpage
-\section{Afleiding ...}
+\section{Afleiding 28}
+\textbf{Bewijs de gelijkheid van de lichtsnelheid via eenheden}
+
+\newpage
+\section{Afleiding 29}
 \textbf{Afleiding van de werking van een sferische spiegel voor verschillende posities van het object}\\
 We bespreken eerst de situatie waarbij een object tussen C en f staat, zoals te zien is in figuur \ref{fig:objecttussen}.
 \begin{figure}[h]
