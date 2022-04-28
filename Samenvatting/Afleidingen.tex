@@ -926,11 +926,67 @@ We kunnen nu vergelijking \ref{eq:DubbelFaraday} en \ref{eq:DubbelMaxwell} samen
 \end{equation*}
 Hierbij vermelden we nog dat $c^2=\frac{1}{\mu_0\epsilon_0}$.
 \newpage
-\section{Afleiding 27}
-\textbf{Energie van een elektro magnetische golf}\\
-
+\section{Afleiding 25}
+\textbf{Energie van een elektromagnetische golf}\\
+We definiëren de energie dichtheid van het elektrisch en magnetisch veld als volgt: 
+\begin{align*}
+	U_E&=\frac{1}{2}\epsilon_0E^2\\
+	U_B&=\frac{1}{2}\frac{B^2}{\mu_0}
+\end{align*}
+We stellen dat de totale energie dichtheid van een elektromagnetische golf gegeven wordt door de som van deze dichtheden:
+\begin{equation*}
+	U_{\text{tot}} = \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}
+\end{equation*}
+We kunnen nu de individuele bijdrage van elk veld bepalen door gebruik te maken van de wet van Faraday, meer bepaald vergelijking \ref{eq:inductieFaraday}:
+\begin{align*}
+	\frac{\partial}{\partial x}(E_msin(kx-\omega t)) &=-\frac{\partial}{\partial t}(B_msin(kx-\omega t))\\
+	E_mkcos(kx-\omega t) &= B_m\omega cos(kx-\omega t)\\
+	\frac{E_m}{B_m} &= \frac{\omega}{k} = c
+\end{align*}
+Hieruit volgt dat:
+\begin{equation*}
+	E_m=cB_m
+\end{equation*}
+Als we de verkregen relatie tussen E en B in de totale energiedichtheid invullen krijgen we:
+\begin{align*}
+	U_{\text{tot}} &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}\\
+	U_{\text{tot}} &= \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{E^2}{\mu_0c^2}\\
+	U_{\text{tot}} &= \underbrace{\frac{1}{2}\epsilon_0E^2}_{\text{50\%}}+\underbrace{\frac{1}{2}\epsilon_0E^2}_{\text{50\%}}
+\end{align*}
+De totale energie valt ook makkelijk te berekenen als:
+\begin{equation*}
+	U_{\text{tot}}=\epsilon_0E^2=\epsilon_0cEB = \frac{EB}{\mu_0}
+\end{equation*}
+We kijken nu ook naar de relatie tussen energie dichtheid en vermogen. We kijken naar de hoeveelheid energie die een elektromagnetische golf kan afzetten op een volume:
+\begin{equation*}
+	dU = \epsilon_0E^2dV=\epsilon_0E^2Acdt
+\end{equation*}
+We gaan nu van energie over naar vermogen door deze afzetting te bekijken over een klein tijdsinterval dt:
+\begin{equation*}
+	\frac{dU}{dt}=\frac{\epsilon_0E^2Acdt}{dt}= \epsilon_0E^2Ac
+\end{equation*}
+Het vermogen per oppervlakte wordt dan:
+\begin{equation*}
+	S = \frac{\epsilon_0E^2Ac}{A} = \epsilon_0E^2c = \frac{EB}{\mu_0}
+\end{equation*}
+We kijken nu naar de Poynting vector $\vec{S}$:
+\begin{equation*}
+	\vec{S} = \frac{\vec{E}\times\vec{B}}{\mu_0}
+\end{equation*}
 \newpage
-\section{Afleiding 28}
+Tot slot definiëren we ook nog de intensiteit, het gemiddelde van het vermogen per oppervlakte:
+\begin{align*}
+	S&= \frac{EB}{\mu_0}\\
+	&= \frac{E^2}{\mu_0c}\\
+	&= \frac{1}{\mu_0c}E^2_msin^2(kx-\omega t)\\
+	&=\frac{E^2_m}{\mu_0c}(\frac{1}{2}-\frac{1}{2}cos(2(kx-\omega t)))
+\end{align*} 
+We nemen nu het gemiddelde van $\vec{S}$:
+\begin{equation*}
+	\vec{S}=\frac{1}{T}\int_{0}^{T}Sdt=\frac{E^2_m}{2\mu_0c}=\frac{E_{\text{RMS}}B_{\text{RMS}}}{\mu_0}
+\end{equation*}
+\newpage
+\section{Afleiding 26}
 \textbf{Bewijs de gelijkheid van de lichtsnelheid via eenheden}\\
 We zullen bewijzen dat de volgende gelijkheid klopt met betrekking tot de eenheden:
 \begin{equation*}
@@ -945,7 +1001,7 @@ We vullen de eenheden in van alle constanten en werken dan verder:
 	\frac{m}{s} &= \frac{m}{s}	
 \end{align*}
 \newpage
-\section{Afleiding 29}
+\section{Afleiding 27}
 \textbf{Afleiding van de werking van een sferische spiegel voor verschillende posities van het object}\\
 We bespreken eerst de situatie waarbij een object tussen C en f staat, zoals te zien is in figuur \ref{fig:objecttussen}.
 \begin{figure}[h]
