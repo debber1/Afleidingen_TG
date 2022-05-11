@@ -10,7 +10,7 @@
 	Trillingen \& Golven \\
 	Maarten Vanierschot}
 \title{Afleidingen}
-\author{Robbe Decapmaker}
+\author{\href{https://github.com/debber1}{Robbe Decapmaker}}
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{amsmath, amssymb, amsthm}
@@ -1156,19 +1156,23 @@ We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in 
 	\end{subfigure}
 	\caption{Dispersie}
 	\label{fig:ChromDisp}
-\end{figure}
+\end{figure}\\
+Door bovenstaand concept toe te passen op een regendruppel die door de lucht valt krijgen we figuur \ref{fig:regendruppelregenboog}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{RegendruppelRegenboog}
 	\caption[Regenboog druppel]{Analyse van één druppel}
 	\label{fig:regendruppelregenboog}
 \end{figure}
+\newpage
+Als we enkel rekening houden met één enkele druppel zien we dat de volgorde van kleuren verkeerd is voor een normale regenboog. Daarom moeten we ook rekening houden met het feit dat er meerdere regendruppels nodig zijn om een regenboog te vormen (zie figuur \ref{fig:regenboog}).
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Regenboog}
 	\caption[Meerdere druppels]{Er zijn meerdere druppels nodig om een regenboog te vormen}
 	\label{fig:regenboog}
-\end{figure}
+\end{figure}\\
+Tevens is het mogelijk om een tweede regenboog waar te nemen boven de eerste. Deze noemt men de secundaire regenboog. Ze is minder fel in vergelijking met de eerste doordat er meer interne reflecties gebeuren voor dat het licht vertrekt naar de observeerde persoon.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{SecundaireRegenboog}
@@ -1178,19 +1182,9 @@ We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in 
 
 \newpage
 \section{Afleiding 30}
+\label{sec:young}
 \textbf{Experiment van Young}\\
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{BuigingGroot}
-	\caption[Buiging grote doorlating]{Buiging door groot gat}
-	\label{fig:buiginggroot}
-\end{figure}
-\begin{figure}[!h]
-	\centering
-	\includegraphics[width=0.5\linewidth]{BuigingKlein}
-	\caption[Buiging kleine doorlating]{Buiging door klein gat}
-	\label{fig:buigingklein}
-\end{figure}
+Het experiment van Young was belangrijk om het golfkarakter van licht aan te tonen. Concreet werd aangetoond dat lichtgolven met elkaar kunnen interfereren zoals geluidsgolven. Het experiment bestaat uit twee spleten die dicht bij elkaar geplaatst worden, zoals te zien is in figuur \ref{fig:young}. Hierbij is het belangrijk dat de spleten klein genoeg zijn (grote orde $a\approx\lambda$), anders zal er geen buiging van het licht plaats vinden zoals te zien is in figuur \ref{fig:buiginggroot} en \ref{fig:buigingklein}. We merken op dat het golfpatroon op figuur \ref{fig:young} enkel theoretisch is, de reden hiervoor staat in afleiding \ref{sec:RealiteitBuiging}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{young}
@@ -1199,54 +1193,127 @@ We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in 
 \end{figure}
 \begin{figure}[!h]
 	\centering
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.7\linewidth]{BuigingGroot}
+		\caption[Buiging grote doorlating]{Buiging door groot gat}
+		\label{fig:buiginggroot}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{BuigingKlein}
+		\caption[Buiging kleine doorlating]{Buiging door klein gat}
+		\label{fig:buigingklein}
+	\end{subfigure}
+	\caption{Spleten}
+	\label{fig:Spleten}
+\end{figure}
+\newpage
+Uit het experiment van Young kunnen we ook de golflengte afleiden van de invallende lichtgolven. Hiervoor kijken we naar figuur \ref{fig:lambdazoeken}:
+\begin{figure}[!h]
+	\centering
 	\includegraphics[width=0.7\linewidth]{LambdaZoeken}
 	\caption[Berekening intensiteit]{Intensiteit}
 	\label{fig:lambdazoeken}
-\end{figure}
-
+\end{figure}\\
+We kunnen $\Delta L$ schrijven als $L_2-L_1$ en de faseverschuiving als $k\Delta L$. Verder maken we ook nog de veronderstelling dat $L>>d$ waardoor we kunnen zeggen dat $\Delta L \approx dsin(\theta)$. Verder zullen we spreken over constructieve interferentie als voldaan is aan $k\Delta L = 2n\cdot\pi$ met $n\in\mathbb{N}$. Destructieve interferentie doet zich voor als $k\Delta L = (2n+1)\cdot\pi$ met $n\in\mathbb{N}$. Door deze veronderstellingen toe te passen krijgen we:
+\begin{align*}
+	\text{Constructieve interferentie}\Rightarrow&\frac{2\pi}{\lambda}dsin(\theta) = 2n\pi\\
+	\text{Destructieve interferentie}\Rightarrow&\frac{2\pi}{\lambda}dsin(\theta) = (2n+1)\pi
+\end{align*}
+Als we nu ons eerste maximum zoeken door $n = 1$ te kiezen, krijgen we twee uitdrukkingen:
+\begin{align}
+	\frac{2\pi}{\lambda}dsin(\theta) &= 2\pi\\
+	\label{eq:eerstemax}
+	(1)\Rightarrow sin(\theta) &= \frac{\lambda}{d}\\
+	\label{eq:eerstemax1}
+	(2)\Rightarrow sin(\theta) &\approx tan(\theta) = \frac{H}{L}
+\end{align}
+Door vergelijking \ref{eq:eerstemax} en \ref{eq:eerstemax1} te combineren krijgen we:
+\begin{equation}
+	\label{eq:lambdadingen}
+	\lambda=\frac{dH}{L}
+\end{equation}
 \newpage
 \section{Afleiding 31}
+\label{sec:intensiteitWrong}
 \textbf{Intensiteits-profiel}\\
+Om een idee te krijgen over de intensiteit van licht bij het experiment van Young, kijken we eerst naar figuur \ref{fig:intensiteitsprofiel}:
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{IntensiteitsProfiel}
 	\caption[Intensiteits-profiel]{Intensiteits-profiel}
 	\label{fig:intensiteitsprofiel}
-\end{figure}
-
+\end{figure}\\
+Het bewijs dat deze figuur klopt volgt uit figuur \ref{fig:lambdazoeken}. We weten nu ook dat licht een golf is, dus kunnen we de elektrische golf vergelijking opschrijven:
+\begin{align*}
+	E_1&=E_0sin(\omega t)\\
+	E_2&=E_0sin(\omega t+\delta)
+\end{align*}
+Het totaal wordt dan:
+\begin{align*}
+	E_{\text{Totaal}}&=E_0sin(\omega t)+E_0sin(\omega t+\delta)\\
+	&=2E_0sin(\omega t +\frac{\delta}{2})cos(\frac{\delta}{2})
+\end{align*}
+We maken nu gebruik van het feit dat $\delta = k\Delta L = kdsin(\theta)\approx k\frac{kdH}{L}$
+\begin{equation*}
+	=2E_0sin(\omega t +\frac{\delta}{2})cos(k\frac{dH}{2L})
+\end{equation*}
+Nu we de totale golfvergelijking hebben gevonden, kunnen we gebruik maken van de Poynting vector om de intensiteit te bepalen
+\begin{equation*}
+	I=\bar{S}=\frac{E^2_0}{2\mu_0c}=\frac{4E^2_0}{2\mu_0c}cos^2(k\frac{dH}{2L})
+\end{equation*}
+\begin{equation*}
+	I = I_0cos^2(k\frac{dH}{2L})
+\end{equation*}
+Het eerste maximum kunnen we vinden door $k\frac{dH}{2L}$ gelijk te stellen aan $\pi$. Door in te vullen in de intensiteits-vergelijking, krijgen we dat:
+\begin{equation*}
+	\lambda=\frac{dH}{L}
+\end{equation*}
+Merk op dat deze vergelijking gelijk is aan vergelijking \ref{eq:lambdadingen}. We kunnen analoog werken om de minima te vinden.
 \newpage
 \section{Afleiding 32}
+\label{sec:RealiteitBuiging}
 \textbf{Buiging door één opening}\\
 \begin{figure}[!h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{BuigingDoor1Opening}
+	\includegraphics[width=0.5\linewidth]{BuigingDoor1Opening}
 	\caption[Buiging door 1 opening]{Buiging door één opening}
 	\label{fig:buigingdoor1opening}
 \end{figure}
+Bij afleiding \ref{sec:young} en \ref{sec:intensiteitWrong} is een verkeerde aanname gemaakt. Er is verondersteld dat licht niet zal interfereren als het door één enkele spleet gaat, dit is echter niet het geval zoals aangetoond zal worden in de volgende afleiding. Om de realistische intensiteit te weten te komen op figuur \ref{fig:buigingdoor1opening}, kijken we naar de volgende vier figuren (\ref{fig:buiging1}, \ref{fig:buiging2}, \ref{fig:buiging3}, \ref{fig:buiging4}). 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.4\linewidth]{BuigingGroot}
 	\caption[Buiging 1]{$Dsin(\theta)=0$}
 	\label{fig:buiging1}
-\end{figure}
+\end{figure}\\
+Hier is er geen enkele interferentie, we zien één heldere plek in het midden van het scherm waarop we projecteren.
+\newpage
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Buiging2}
 	\caption[Buiging 2]{$Dsin(\theta)=\lambda$}
 	\label{fig:buiging2}
 \end{figure}
+Hier zal de onderste helft van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=\lambda\Rightarrow H=\frac{\lambda L}{D}$)
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Buiging3}
 	\caption[Buiging 3]{$Dsin(\theta)=\frac{3\lambda}{2}$}
 	\label{fig:buiging3}
-\end{figure}
+\end{figure}\\
+Hier zal de onderste twee derden van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=\frac{3\lambda}{2}\Rightarrow H=\frac{3\lambda L}{2D}$)
+\newpage
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Buiging4}
 	\caption[Buiging 4]{$Dsin(\theta)=2\lambda$}
 	\label{fig:buiging4}
 \end{figure}
+Hier zal de onderste helft van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=2\lambda\Rightarrow H=\frac{2\lambda L}{D}$)
+\newline
+We zien dus dat de intensiteit sterk af neemt als we $\theta$ toe laten nemen. Dit zorgt er ultiem voor dat de resultaten van het experiment van Young er uit zien als op figuur \ref{fig:intensiteitsprofiel-1}. We zien duidelijk dat de pieken niet gelijk blijven, maar verder afnemen in amplitude naarmate we $\theta$ laten toe nemen. 
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{"IntensiteitsProfiel (1)"}
