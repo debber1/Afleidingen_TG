@@ -29,14 +29,14 @@
 
 De afleidingen voor trillingen en golven. \href{https://github.com/debber1/Afleidingen_TG}{De source code is te vinden op github.}\\
 https://github.com/debber1/Afleidingen\_TG\\
-Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het examen. Ik ben niet verantwoordelijk voor jouw resultaat op jouw examen. Het is jouw verantwoordelijkheid om ook nog de andere onderdelen van deze cursus op een degelijke manier te verwerken. \\
-%DEZE ZIN IS ENKEL RELEVANT TIJDENS DE ONTWIKKELING VAN DIT DOCUMENT
-\textbf{Dit document is een `work in progress', dit wil zeggen dat er (ongeveer) een wekelijkse update zal zijn. De meest recente versie zal altijd op Github staan!}
+\newline
+Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het examen. Ik ben niet verantwoordelijk voor jouw resultaat op jouw examen. Het is jouw verantwoordelijkheid om ook nog de andere onderdelen van deze cursus op een degelijke manier te verwerken. Het is namelijk zo dat dit document enkel wiskundige afleidingen bevat. Onderwerpen zoals polarisatie en radar zijn ook te kennen.\\
 
 \section*{Contributors}
+\href{https://github.com/debber1}{Robbe Decapmaker}\\
 \href{https://github.com/sydon1}{Sodir Yuksel} \\
 \href{https://github.com/ItsAlphie}{Jonathan Valgaeren}
-
+\newpage
 \section{Afleiding 1}
 
 \textbf{Afleiding van de uitdrukking voor de verplaatsing van een ongedempte trilling aan de hand van de bewegings-vergelijking}\\
@@ -66,6 +66,7 @@ We hebben ook de versnelling geschreven als de tweede afgeleide van de verplaats
 	m\frac{d^2x}{dt^2} + kx = 0
 	\label{eq:DVGLTrilling}
 \end{equation}
+\newpage
 Deze differentiaal vergelijking moeten we oplossen aan de hand van beginvoorwaarden. Deze voorwaarden verkrijgen we experimenteel. Bij het experiment noteren we de uitwijking tegenover de tijd. Hierdoor verkrijgen we figuur \ref{fig:harmonischeoscilator}.
 Wiskundig vertaalt dit zich tot: 
 \begin{equation}
@@ -240,13 +241,13 @@ Hiermee hebben we nu de natuurlijke frequentie van het systeem gevonden. We kunn
 We kunnen nu drie gevallen onderscheiden: 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Ondergedempt}
+	\includegraphics[width=0.5\linewidth]{Ondergedempt}
 	\caption[Ondergedempte trilling]{Ondergedempte trilling ($b^2 << 4mk$)}
 	\label{fig:ondergedempt}
 \end{figure}
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.6\linewidth]{Over_Kritisch_gedempt}
+	\includegraphics[width=0.5\linewidth]{Over_Kritisch_gedempt}
 	\caption[Kritisch en over gedempte trilling]{Kritisch ($b^2 = 4mk$) en over gedempte ($b^2 >> 4mk$) trilling}
 	\label{fig:overkritischgedempt}
 \end{figure}
@@ -433,13 +434,13 @@ We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{h
 De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve-interferentie. Bij destructieve zullen de golven elkaar tegen werken zodat de beweging stopt (zie figuur \ref{fig:destructief}). Constructieve interferentie zal ervoor zorgen dat de resulterende golf groter wordt (zie figuur \ref{fig:constructief}).
 \begin{figure}[h]
 	\centering
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.4\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{constructieve_interferentie}
 		\caption{Constructieve interferentie}
 		\label{fig:constructief}
 	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{.4\textwidth}
 		\centering
 		\includegraphics[width=1\linewidth]{destructieve_interferentie}
 		\caption{Destructieve interferentie}
@@ -448,7 +449,7 @@ De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve
 	\caption{Twee extreme gevallen van interferentie.}
 	\label{fig:omegaVZ}
 \end{figure}\\
-
+\newpage
 \section{Afleiding 11}
 \textbf{Staande golven}\\
 Staande golven doen zich vaak voor bij muziek instrumenten zoals de gitaar. We een staande golf als volgt wiskundig voorstellen:
@@ -479,7 +480,7 @@ Hierbij is $m = 1$ dus moet $\lambda = 2L$ en de frequentie is dan $f = \frac{v}
 \textbf{Tweede harmonische $(m = 2)$}\\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Tweede_harm}
+	\includegraphics[width=0.6\linewidth]{Tweede_harm}
 	\caption[Tweede harmonische]{Tweede harmonische}
 	\label{fig:tweedeharm}
 \end{figure}\\
@@ -487,7 +488,7 @@ Hierbij is $m = 2$ dus moet $\lambda = L$ en de frequentie is dan $f = \frac{v}{
 \textbf{Derde harmonische $(m = 3)$}\\
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Derde_harm}
+	\includegraphics[width=0.6\linewidth]{Derde_harm}
 	\caption[Derde harmonische]{Derde harmonische}
 	\label{fig:Derdeharm}
 \end{figure}\\
@@ -1320,6 +1321,23 @@ We zien dus dat de intensiteit sterk af neemt als we $\theta$ toe laten nemen. D
 	\caption[Intensiteitsprofiel]{Secundair intensiteitsprofiel}
 	\label{fig:intensiteitsprofiel-1}
 \end{figure}
-
-
+\newpage
+\section{Afleiding 33}
+\textbf{Optische resolutie}
+Wanneer twee objecten dicht bij elkaar liggen kunnen we ze niet onderscheiden door buiging. Neem de opstelling in figuur \ref{fig:optischeresolutie}:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{OptischeResolutie}
+	\caption[Optische resolutie]{Optische resolutie}
+	\label{fig:optischeresolutie}
+\end{figure}\\
+We stellen dat we twee objecten kunnen onderscheiden als voldaan is aan (waarbij D de diameter is van de lens waardoor de objecten bekeken worden):
+\begin{equation*}
+	\theta\approx\sin(\theta)=\frac{\lambda}{D}
+\end{equation*}
+In de praktijk vermenigvuldigen we het rechter-lid nog met \num{1.22} om rekening te houden met de optische eigenschappen van het menselijk oog. Concreet krijgen we dus volgende vergelijking:
+\begin{equation*}
+	\frac{H}{L}= \frac{1.22\cdot \lambda}{D}
+\end{equation*}
+Als aan bovenstaande voorwaarde voldaan is, zijn we in staat om twee objecten van elkaar ten onderscheiden. We kunnen dus niets dichter dan $\frac{1.22\cdot\lambda L}{D}$ zien. 
 \end{document}
