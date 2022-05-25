@@ -821,7 +821,7 @@ Als de spanningsbron van polariteit veranderd, veranderen ook de velden van rich
 \newpage
 \section{Afleiding 23}
 \textbf{Elektromagnetische velden}\\
-Eerst enkele eigenschappen van elektromagnetische golven
+Eerst enkele eigenschappen van elektromagnetische golven:
 \begin{enumerate}
 	\item $\vec{B}$ en $\vec{E}$ staan loodrecht op de voortplantingsrichting (transversale golven)
 	\item $\vec{B}$ staat loodrecht op $\vec{E}$
@@ -861,16 +861,16 @@ In figuur \ref{fig:an-electromagnetic-wave} kunnen we stellen dat:
 	\label{fig:InductieFaraday}
 \end{figure}\\
 
-We berekenen de verandering in het elektrische flux van een golf. We definiëren hiervoor een gesloten kring zoals te zien is in figuur \ref{fig:faradaygolf}. We nemen dx zo klein mogelijk, zodat we de golf op dit kleine interval als lineair kunnen aannemen. We zien deze linearisering in figuur \ref{fig:inzoomfaraday}. Hierdoor wordt het effectief elektrisch veld gereduceerd tot de twee dikke lijnen op de linker en rechter zijde van de rechthoek. Deze zijn respectievelijk gelijk aan:
+We berekenen de verandering in de elektrische flux van een golf. We definiëren hiervoor een gesloten kring zoals te zien is in figuur \ref{fig:faradaygolf}. We nemen dx zo klein mogelijk, zodat we de golf op dit kleine interval als lineair kunnen aannemen. We zien deze linearisering in figuur \ref{fig:inzoomfaraday}. Hierdoor wordt het effectief elektrisch veld gereduceerd tot de twee dikke lijnen op de linker en rechter zijde van de rechthoek. Deze zijn respectievelijk gelijk aan:
 \begin{align*}
 	\vec{E_L} &= \vec{E}-\frac{\partial\vec{E}}{\partial x}\frac{dx}{2}\\
 	\vec{E_R} &= \vec{E}+\frac{\partial\vec{E}}{\partial x}\frac{dx}{2}	
 \end{align*}
-Door de wet van Faraday $-\frac{\partial\Phi_B}{\partial t}= \oint\vec{E}\cdot\vec{dS}$ toe te passen op alle 4 de zijden van de rechthoek:
+Door de wet van Faraday $-\frac{\partial\Phi_B}{\partial t}= \oint\vec{E}\cdot\vec{dS}$ toe te passen op alle 4 zijden van de rechthoek bekomen we:
 \begin{equation*}
 	\oint\vec{E}\cdot\vec{dS} = \underbrace{(E+\frac{\partial E}{\partial x}\frac{dx}{2})h}_1 + \underbrace{0}_2 -\underbrace{(E-\frac{\partial E}{\partial x}\frac{dx}{2})h}_3 + \underbrace{0}_4
 \end{equation*}
-Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen tot (met de wet van Faraday):
+Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen (met de wet van Faraday) tot:
 \begin{align}
 	 \frac{\partial E}{\partial x}hdx &= -\frac{\partial B}{\partial t}hdx\\
 	 \label{eq:inductieFaraday}
@@ -895,7 +895,7 @@ Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vec
 	\caption{Wet van Maxwell}
 	\label{fig:InductieMaxwell}
 \end{figure}
-We maken opnieuw dezelfde redenering als voor de afleiding met de wet van Faraday, we merken wel op dat we nu met een magnetisch veld werken en dat we gebruik maken van de wet van Maxwell ($\mu_0\epsilon_0\frac{\partial \Phi_E}{\partial t}=\oint\vec{B}\cdot\vec{dS}$). De twee dikke lijnen kunnen we hierdoor definiëren als:
+We maken opnieuw dezelfde redenering als voor de afleiding met de wet van Faraday: \\ We merken wel op dat we nu met een magnetisch veld werken en dat we gebruik maken van de wet van Maxwell ($\mu_0\epsilon_0\frac{\partial \Phi_E}{\partial t}=\oint\vec{B}\cdot\vec{dS}$). De twee dikke lijnen kunnen we hierdoor definiëren als:
 \begin{align*}
 	\vec{B_L} &= \vec{B}-\frac{\partial\vec{B}}{\partial x}\frac{dx}{2}\\
 	\vec{B_R} &= \vec{B}+\frac{\partial\vec{B}}{\partial x}\frac{dx}{2}	
@@ -904,7 +904,7 @@ We passen de wet van Maxwell toe op de randen van de gesloten kring:
 \begin{equation*}
 	\oint\vec{B}\cdot\vec{dS} = \underbrace{(B-\frac{\partial B}{\partial x}\frac{dx}{2})h}_1 + \underbrace{0}_2 -\underbrace{(B+\frac{\partial B}{\partial x}\frac{dx}{2})h}_3 + \underbrace{0}_4
 \end{equation*}
-Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen tot (met de wet van Maxwell):
+Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vectoren loodrecht op elkaar staan. We kunnen deze uitdrukking verder vereenvoudigen (met de wet van Maxwell) tot:
 \begin{align}
 	-\frac{\partial B}{\partial x}hdx &= \mu_0\epsilon_0\frac{\partial E}{\partial t}hdx\\
 	\label{eq:inductieMaxwell}
@@ -930,12 +930,12 @@ Hierbij vermelden we nog dat $c^2=\frac{1}{\mu_0\epsilon_0}$.
 \newpage
 \section{Afleiding 25}
 \textbf{Energie van een elektromagnetische golf}\\
-We definiëren de energie dichtheid van het elektrisch en magnetisch veld als volgt: 
+We definiëren de energiedichtheid van een elektrisch en magnetisch veld als volgt: 
 \begin{align*}
 	U_E&=\frac{1}{2}\epsilon_0E^2\\
 	U_B&=\frac{1}{2}\frac{B^2}{\mu_0}
 \end{align*}
-We stellen dat de totale energie dichtheid van een elektromagnetische golf gegeven wordt door de som van deze dichtheden:
+We stellen dat de totale energiedichtheid van een elektromagnetische golf gegeven wordt door de som van deze dichtheden:
 \begin{equation*}
 	U_{\text{tot}} = \frac{1}{2}\epsilon_0E^2+\frac{1}{2}\frac{B^2}{\mu_0}
 \end{equation*}
@@ -959,7 +959,7 @@ De totale energie valt ook makkelijk te berekenen als:
 \begin{equation*}
 	U_{\text{tot}}=\epsilon_0E^2=\epsilon_0cEB = \frac{EB}{\mu_0}
 \end{equation*}
-We kijken nu ook naar de relatie tussen energie dichtheid en vermogen. We kijken naar de hoeveelheid energie die een elektromagnetische golf kan afzetten op een volume:
+We kijken nu ook naar de relatie tussen energiedichtheid en vermogen. We kijken naar de hoeveelheid energie die een elektromagnetische golf kan afzetten op een volume:
 \begin{equation*}
 	dU = \epsilon_0E^2dV=\epsilon_0E^2Acdt
 \end{equation*}
@@ -1004,7 +1004,7 @@ We vullen de eenheden in van alle constanten en werken dan verder:
 \end{align*}
 \newpage
 \section{Afleiding 27}
-\textbf{Afleiding van de werking van een sferische spiegel voor verschillende posities van het object}\\
+\textbf{Afleiding van de werking van een sferische spiegel op verschillende posities van het object}\\
 We bespreken eerst de situatie waarbij een object tussen C en f staat, zoals te zien is in figuur \ref{fig:objecttussen}.
 \begin{figure}[h]
 	\centering
@@ -1021,7 +1021,7 @@ Hieruit leiden we af dat de versterking $m$ gelijk is aan :
 \begin{equation*}
 	\frac{h_O}{d_O} = \frac{h_I}{d_I} = |m|
 \end{equation*}
-Om nu de afstand $d_I$ te vinden kunnen de twee congruente driehoeken die in het geel aangeduid staan op figuur \ref{fig:objecttussen} gebruiken. Voor deze driehoeken geldt dat: 
+Om nu de afstand $d_I$ te vinden, kunnen we de twee congruente driehoeken gebruiken die in het geel aangeduid staan op figuur \ref{fig:objecttussen}. Voor deze driehoeken geldt dat: 
 \begin{equation*}
 	\frac{|OO'|}{|Of|}=\frac{|AB'|}{|Af|} \approx\frac{|AB'|}{f} \Rightarrow \frac{h_O}{d_0-f} = \frac{h_I}{f}
 \end{equation*}
@@ -1030,7 +1030,7 @@ Dit kunnen we verder uitwerken tot:
 	\frac{h_O}{h_I} = \frac{d_O-f}{f}=\frac{d_O}{d_I}\Rightarrow\frac{1}{f}-\frac{1}{d_O} = \frac{1}{d_I}
 \end{equation*}
 \newpage
-We bespreken nu de situatie waarbij het object tussen f en de spiegel staat, zoals te zien is in figuur \ref{fig:objectspiegelf}.
+We bespreken nu de situatie waarbij het object tussen f en de spiegel staat, zoals in figuur \ref{fig:objectspiegelf}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{ObjectSpiegelF}
@@ -1067,7 +1067,7 @@ We bespreken nu de situatie waarbij het object ver weg staat, zoals te zien is i
 	\includegraphics[width=0.7\linewidth]{RondeSpiegelVoorwerpVer}
 	\caption[Spiegel ver]{Object staat ver van de spiegel}
 	\label{fig:rondespiegelvoorwerpver}
-\end{figure}
+\end{figure} \\
 We proberen opnieuw om de afstand $d_I$ te bepalen aan de hand van driehoeken.
 \begin{align*}
 	\Delta OO'A&\Rightarrow tan(\theta)=\frac{h_O}{d_O}\\
@@ -1091,7 +1091,7 @@ We kunnen dus stellen dat:
 	\frac{d_O}{d_I}&=\frac{d_O-f}{f}\\
 	\frac{1}{f}&= \frac{1}{d_I}+\frac{1}{d_O}
 \end{align*}
-Alle van bovenstaande inzichten moeten ook toegepast kunnen worden op een convexe spiegel. 
+Alle bovenstaande inzichten moeten ook toegepast kunnen worden op een convexe spiegel. 
 \newpage
 \section{Afleiding 28}
 \textbf{Afleiding van Snellius}\\
@@ -1101,13 +1101,13 @@ Alle van bovenstaande inzichten moeten ook toegepast kunnen worden op een convex
 	\caption[Snellius]{Wet van Snellius}
 	\label{fig:snellius}
 \end{figure}\\
-Als een golf van medium veranderd zoals te zien is in figuur \ref{fig:snellius}, zal er een verandering in voorplantingsrichting optreden. we maken de aanname dat de brekingsindex van het tweede medium kleiner is dan dat van het eerste medium in figuur \ref{fig:snellius}. We kunnen dus stellen dat:
+Als een golf van medium veranderd zoals te zien is in figuur \ref{fig:snellius}, zal er een verandering in voorplantingsrichting optreden. We maken de aanname dat de brekingsindex van het tweede medium kleiner is dan dat van het eerste medium in figuur \ref{fig:snellius}. We kunnen dus stellen dat:
 \begin{align*}
 	n_2&<n_1\\
 	\frac{c}{v_2}&<\frac{c}{v_1}\\
 	v_2&>v_1
 \end{align*}
-We stellen ook dat de afstand tussen de golffronten in medium 1 gelijk is aan: $\lambda_1$. We kunnen dus volgende redenering maken (omdat de frequentie van de golf niet veranderd):
+We stellen ook dat de afstand tussen de golffronten in medium 1 gelijk is aan $\lambda_1$. We kunnen dus volgende redenering maken (omdat de frequentie van de golf niet veranderd):
 \begin{align*}
 	v_1&=\lambda_1f\\
 	v_2&=\lambda_2f
@@ -1141,7 +1141,7 @@ Na herordening krijgen we de wet van Snellius:
 \newpage
 \section{Afleiding 29}
 \textbf{Regenboog}\\
-We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in figuur \ref{fig:prisma}, zal bij het breken van licht een splitsing van de kleuren gebeuren. De volgorde van de gesplitste kleuren is niet willekeurig, als de golflengte van licht korter wordt zal de brekingsindex toe nemen zoals te zien is op figuur \ref{fig:chromatische-dispersie}. 
+We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in figuur \ref{fig:prisma}, zal bij het breken van licht een splitsing van de kleuren gebeuren. De volgorde van de gesplitste kleuren is niet willekeurig: als de golflengte van licht korter wordt, zal de brekingsindex toe nemen zoals te zien is op figuur \ref{fig:chromatische-dispersie}. 
 \begin{figure}[!h]
 	\centering
 	\begin{subfigure}{.5\textwidth}
@@ -1159,7 +1159,7 @@ We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in 
 	\caption{Dispersie}
 	\label{fig:ChromDisp}
 \end{figure}\\
-Door bovenstaand concept toe te passen op een regendruppel die door de lucht valt krijgen we figuur \ref{fig:regendruppelregenboog}.
+Door bovenstaand concept toe te passen op een regendruppel die door de lucht valt, krijgen we figuur \ref{fig:regendruppelregenboog}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{RegendruppelRegenboog}
@@ -1167,14 +1167,14 @@ Door bovenstaand concept toe te passen op een regendruppel die door de lucht val
 	\label{fig:regendruppelregenboog}
 \end{figure}
 \newpage
-Als we enkel rekening houden met één enkele druppel zien we dat de volgorde van kleuren verkeerd is voor een normale regenboog. Daarom moeten we ook rekening houden met het feit dat er meerdere regendruppels nodig zijn om een regenboog te vormen (zie figuur \ref{fig:regenboog}).
+Als we enkel rekening houden met één enkele druppel, zien we dat de volgorde van kleuren omgekeerd is vergeleken met een normale regenboog. Daarom moeten we ook rekening houden met het feit dat er meerdere regendruppels nodig zijn om een regenboog te vormen (zie figuur \ref{fig:regenboog}).
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Regenboog}
 	\caption[Meerdere druppels]{Er zijn meerdere druppels nodig om een regenboog te vormen}
 	\label{fig:regenboog}
 \end{figure}\\
-Tevens is het mogelijk om een tweede regenboog waar te nemen boven de eerste. Deze noemt men de secundaire regenboog. Ze is minder fel in vergelijking met de eerste doordat er meer interne reflecties gebeuren voor dat het licht vertrekt naar de observeerde persoon.
+Tevens is het mogelijk om een tweede regenboog waar te nemen boven de eerste. Deze noemt men de secundaire regenboog. Ze is minder fel in vergelijking met de eerste doordat er meer interne reflecties gebeuren vooraleer het licht vertrekt naar de observeerde persoon.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{SecundaireRegenboog}
@@ -1247,7 +1247,7 @@ Om een idee te krijgen over de intensiteit van licht bij het experiment van Youn
 	\caption[Intensiteits-profiel]{Intensiteits-profiel}
 	\label{fig:intensiteitsprofiel}
 \end{figure}\\
-Het bewijs dat deze figuur klopt volgt uit figuur \ref{fig:lambdazoeken}. We weten nu ook dat licht een golf is, dus kunnen we de elektrische golf vergelijking opschrijven:
+Het bewijs dat deze figuur klopt, volgt uit figuur \ref{fig:lambdazoeken}. We weten nu ook dat licht een golf is, dus kunnen we de elektrische golf vergelijking opschrijven:
 \begin{align*}
 	E_1&=E_0sin(\omega t)\\
 	E_2&=E_0sin(\omega t+\delta)
@@ -1268,7 +1268,7 @@ Nu we de totale golfvergelijking hebben gevonden, kunnen we gebruik maken van de
 \begin{equation*}
 	I = I_0cos^2(k\frac{dH}{2L})
 \end{equation*}
-Het eerste maximum kunnen we vinden door $k\frac{dH}{2L}$ gelijk te stellen aan $\pi$. Door in te vullen in de intensiteits-vergelijking, krijgen we dat:
+Het eerste maximum kunnen we vinden door $k\frac{dH}{2L}$ gelijk te stellen aan $\pi$. Door dit in te vullen in de intensiteits-vergelijking, krijgen we dat:
 \begin{equation*}
 	\lambda=\frac{dH}{L}
 \end{equation*}
@@ -1282,7 +1282,7 @@ Merk op dat deze vergelijking gelijk is aan vergelijking \ref{eq:lambdadingen}. 
 	\includegraphics[width=0.5\linewidth]{BuigingDoor1Opening}
 	\caption[Buiging door 1 opening]{Buiging door één opening}
 	\label{fig:buigingdoor1opening}
-\end{figure}
+\end{figure} \\
 Bij afleiding \ref{sec:young} en \ref{sec:intensiteitWrong} is een verkeerde aanname gemaakt. Er is verondersteld dat licht niet zal interfereren als het door één enkele spleet gaat, dit is echter niet het geval zoals aangetoond zal worden in de volgende afleiding. Om de realistische intensiteit te weten te komen op figuur \ref{fig:buigingdoor1opening}, kijken we naar de volgende vier figuren (\ref{fig:buiging1}, \ref{fig:buiging2}, \ref{fig:buiging3}, \ref{fig:buiging4}). 
 \begin{figure}[!h]
 	\centering
@@ -1305,7 +1305,7 @@ Hier zal de onderste helft van de lichtstralen destructief interfereren. ($ \fra
 	\caption[Buiging 3]{$Dsin(\theta)=\frac{3\lambda}{2}$}
 	\label{fig:buiging3}
 \end{figure}\\
-Hier zal de onderste twee derden van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=\frac{3\lambda}{2}\Rightarrow H=\frac{3\lambda L}{2D}$)
+Hier zullen de onderste twee derden van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=\frac{3\lambda}{2}\Rightarrow H=\frac{3\lambda L}{2D}$)
 \newpage
 \begin{figure}[!h]
 	\centering
@@ -1324,8 +1324,8 @@ We zien dus dat de intensiteit sterk af neemt als we $\theta$ toe laten nemen. D
 \end{figure}
 \newpage
 \section{Afleiding 33}
-\textbf{Optische resolutie}
-Wanneer twee objecten dicht bij elkaar liggen kunnen we ze niet onderscheiden door buiging. Neem de opstelling in figuur \ref{fig:optischeresolutie}:
+\textbf{Optische resolutie} \\
+Wanneer twee objecten dicht bij elkaar liggen, kunnen we ze niet van elkaar onderscheiden door buiging. Neem de opstelling in figuur \ref{fig:optischeresolutie}:
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{OptischeResolutie}
