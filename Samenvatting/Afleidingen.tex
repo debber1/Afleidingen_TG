@@ -221,9 +221,9 @@ We beginnen met de bewegingsvergelijking op te stellen:
 	m \frac{d^2x}{dt^2} = & -kx - b\frac{dx}{dt}\\
 	0 = & m \frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx
 \end{align*}
-We maken gebruik van de formule van Euler $e^{i\varphi}=cos(\varphi) +isin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
+We maken gebruik van de formule van Euler $e^{j\varphi}=cos(\varphi) +jsin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
 \begin{equation*}
-	\widetilde{x}(t) = Ae^{(\gamma +i\omega)t+i\varphi}
+	\widetilde{x}(t) = Ae^{(\gamma +j\omega)t+j\varphi}
 \end{equation*}
 Het reëel deel is dus:
 \begin{equation*}
@@ -232,15 +232,15 @@ Het reëel deel is dus:
 We kunnen deze nu invullen in de bewegingsvergelijking:
 \begin{equation}
 	\label{eq:complexbeweging}
-	m(\gamma +i\omega)^2\widetilde{x}(t) + b(\gamma +i\omega)e^{(\gamma +i\omega)t+i\varphi}+ke^{(\gamma +i\omega)t+i\varphi} = 0
+	m(\gamma +j\omega)^2\widetilde{x}(t) + b(\gamma +j\omega)e^{(\gamma +j\omega)t+j\varphi}+ke^{(\gamma +j\omega)t+j\varphi} = 0
 \end{equation}
 Na herordenen en het delen door m, krijgen we:
 \begin{equation*}
-	\gamma^2+2i\gamma\omega-\omega^2+\frac{b}{m}\gamma+i\frac{\omega b}{m}+\frac{k}{m}=0
+	\gamma^2+2j\gamma\omega-\omega^2+\frac{b}{m}\gamma+j\frac{\omega b}{m}+\frac{k}{m}=0
 \end{equation*}
 We kijken nu naar het imaginair deel:
 \begin{align*}
-	2i\gamma \omega +i\frac{\omega b}{m}&=0\\
+	2j\gamma \omega +j\frac{\omega b}{m}&=0\\
 	2\gamma + \frac{b}{m} = 0\\
 	-\frac{b}{2m} = \gamma
 \end{align*}
