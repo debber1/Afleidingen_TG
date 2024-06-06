@@ -442,7 +442,7 @@ Interferentie doet zich voor als er meerdere verschillende golven aanwezig zijn 
 	\caption[Interferentie]{Golven $y_1$ en $y_2$ die zullen interfereren}
 	\label{fig:interferentie}
 \end{figure}
-We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}:
+We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}:
 \begin{align*}
 	y & = y_1+y_2\\
 	y & = y_msin(kx\pm\omega t) y_m+sin(kx\pm\omega t +\phi)\\
@@ -473,7 +473,7 @@ Staande golven doen zich vaak voor bij muziek instrumenten zoals de gitaar. We e
 	y(x,t) &=y_msin(kx-\omega t)+y_msin(kx+\omega t)\\
 	y(x,t) &=\underbrace{2y_msin(kx)}_{A(x)}cos(\omega t)
 \end{align*}
-Hierbij gebruiken we wederom de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) vast gehouden worden, kunnen we volgende randvoorwaarden stellen:
+Hierbij gebruiken we wederom de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) vast gehouden worden, kunnen we volgende randvoorwaarden stellen:
 \begin{align*}
 	y(0,t)  &= 0 \Rightarrow sin(0)=0\\
 	y(L,t) &= 0 \Rightarrow sin(kL)=0
@@ -614,12 +614,12 @@ We veronderstellen een open buis met lengte L. Als nevenvoorwaarde stellen we da
 	\Delta P_S (x,t) &= \Delta P_m sin(kx+\omega t) + \Delta P_m sin(kx-\omega t)\\
 	&= 2\Delta P_m sin(kx)cos(\omega t)
 \end{align*}
-Hierbij gebruiken we de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Vervolgens kijken we naar de verplaatsing in de buis:
+Hierbij gebruiken we de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}. Vervolgens kijken we naar de verplaatsing in de buis:
 \begin{align*}
 	D_S(x,t)&=Asin(kx+\omega t+\frac{\pi}{2})+Asin(kx-\omega t+\frac{\pi}{2})\\
 	&= 2Asin(kx+\frac{\pi}{2})cos(\omega t)
 \end{align*}
-Hierbij gebruiken we nogmaals de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.\\
+Hierbij gebruiken we nogmaals de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}.\\
 Enkele oplossingen zien er als volgt uit:\\
 
 \textbf{Eerste harmonische}\\
@@ -738,7 +738,7 @@ We kunnen de druk beschrijven als:
 	\Delta P_1 &= \Delta P_msin(kL_1\pm\omega t)\\
 	\Delta P_2 &= \Delta P_msin(kL_2\pm\omega t)
 \end{align*}
-Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson} toe te passen krijgen we:
 \begin{equation*}
 	\Delta P = 2\Delta P_msin(k\frac{L_1+L_2}{2}\pm\omega t)cos(k\frac{L_1-L_2}{2})
 \end{equation*}
@@ -753,7 +753,7 @@ Als 2 golven frequenties hebben die zeer dicht bij elkaar liggen, krijgen we klo
 	D_1&=Asin(2\pi f_1t)\\
 	D_2&=Asin(2\pi f_2t)
 \end{align*}
-Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson} toe te passen krijgen we:
 \begin{equation*}
 	D=2Acos(2\pi\frac{f_1-f_2}{2}t)sin(2\pi\frac{f_1+f_2}{2}t)
 \end{equation*}
