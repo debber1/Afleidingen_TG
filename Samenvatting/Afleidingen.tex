@@ -43,7 +43,8 @@ Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het exam
 \href{https://github.com/debber1}{Robbe Decapmaker}\\
 \href{https://github.com/sydon1}{Sodir Yuksel} \\
 \href{https://github.com/ItsAlphie}{Jonathan Valgaeren}\\
-\href{https://github.com/Robope}{Robbe Willaert}
+\href{https://github.com/Robope}{Robbe Willaert}\\
+\href{https://github.com/TimoNotThy}{Timo Vandevenne}
 \section*{Change log}
 \begin{itemize}
 	\item Aan de hand van het document op Toledo aanduiden welke afleidingen niet gekend moeten zijn 
@@ -53,8 +54,11 @@ Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het exam
 	\item \href{https://github.com/debber1/Afleidingen_TG/issues/18}{Fout in afleiding 27}
 	\item \href{https://github.com/debber1/Afleidingen_TG/issues/19}{Fout in afleiding 28}
 \end{itemize}
+\section*{Historisch}
+In 2022 waren afleidingen 3, 8, 9, 10, 15, 18, 19, 21, 22, 23, 25 en 33 niet te kennen.\\
+In 2024 zijn afleidingen 1, 2, 4, 5, 6, 7, 11, 12, 16, 17, 20, 24, 27, 28, 29, 30, 32 te kennen en dat van de voortplantingssnelheid van geluid dat momenteel nog ontbreekt.
 \newpage
-\section{Afleiding 1}
+\section{Ongedempte trilling '23-'24}
 
 \textbf{Afleiding van de uitdrukking voor de verplaatsing van een ongedempte trilling aan de hand van de bewegings-vergelijking}\\
 \begin{figure}[htbp]
@@ -62,13 +66,13 @@ Dit document is \textbf{niet} alles wat je moet kennen van theorie voor het exam
 	\includegraphics[width=0.4\linewidth]{MassaVeer}
 	\caption[Massa veer systeem]{Massa veer systeem}
 	\label{fig:massaveer}
-\end{figure}
+\end{figure}\\
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Harmonische_Oscillator}
 	\caption[Harmonische Oscillator]{Harmonische Oscillator}
 	\label{fig:harmonischeoscilator}%als dit het punt nie over brengt, weet ik het ook niet meer :p
-\end{figure}
+\end{figure}\\
 
 We stellen eerst de tweede wet van Newton op voor het blokje M uit figuur \ref{fig:massaveer}.
 \begin{equation*}
@@ -115,7 +119,7 @@ Vergelijking \ref{eq:Bewegingsvergelijking} is nu een oplossing voor differentia
 
 
 \newpage
-\section{Afleiding 2}
+\section{Energie bij ongedempte trilling '23-'24}
 \textbf{Afleiding van de potentiële en kinetische energie van een ongedempte trilling in functie van de plaats}
 \\
 
@@ -133,12 +137,11 @@ We zien nu duidelijk dat de hoeveelheid energie niet afhankelijk is van de uitwi
 	\includegraphics[width=0.7\linewidth]{Energie_Balans}
 	\caption[Energie balans]{Energie balans}
 	\label{fig:energiebalans}
-\end{figure}
+\end{figure}\\
 
 \newpage
 
-\section{Afleiding 3 (niet in 2022)}
-\textbf{Snelheid in functie van de afstand}
+\section{Snelheid in functie van afstand}
 \begin{equation*}
 	\frac{dv}{dt} = \frac{dv}{dx}\cdot\frac{dx}{dt}
 \end{equation*}
@@ -172,14 +175,14 @@ Uit vergelijking \ref{eq:snelheid_positie} kunnen we nu ook afleiden wat de uitd
 	v_{\text{max}} =& \omega A
 \end{align*}
 \newpage
-\section{Afleiding 4}
+\section{Beweging pendulum '23-'24}
 \textbf{Afleiding van de beweging van een pendulum aan de hand van de bewegingsvergelijking}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Pendulum}
 	\caption[Pendulum]{Pendulum}
 	\label{fig:pendulum}
-\end{figure} \\
+\end{figure}\\ \\
 De drijvende kracht van de pendulum is gelijk aan:
 \begin{equation*}
 	F = -mg sin(\theta)
@@ -206,14 +209,13 @@ Dit geeft ons een differentiaalvergelijking. Een oplossing ziet er als volgt uit
 \end{equation*}
 Hierbij zien we dat $\omega = \sqrt{\frac{g}{l}}$.
 \newpage
-\section{Afleiding 5}
-\textbf{Gedempte harmonische trilling}\\
+\section{Gedempte harmonische trilling '23-'24}
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.7\linewidth]{DempingVeer}
 	\caption[Gedempt massa veer systeem]{Gedempt massa-veer-systeem}
 	\label{fig:dempingveer}
-\end{figure}
+\end{figure}\\
 We beginnen met de bewegingsvergelijking op te stellen:
 \begin{align*}
 	m \vec{a} =& \vec{F}_{veer} + \vec{F}_{demper}\\
@@ -221,9 +223,9 @@ We beginnen met de bewegingsvergelijking op te stellen:
 	m \frac{d^2x}{dt^2} = & -kx - b\frac{dx}{dt}\\
 	0 = & m \frac{d^2x}{dt^2} + b\frac{dx}{dt} + kx
 \end{align*}
-We maken gebruik van de formule van Euler $e^{i\varphi}=cos(\varphi) +isin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
+We maken gebruik van de formule van Euler $e^{j\varphi}=cos(\varphi) +jsin(\varphi)$ om tot een oplossing van de differentiaalvergelijking te komen:
 \begin{equation*}
-	\widetilde{x}(t) = Ae^{(\gamma +i\omega)t+i\varphi}
+	\widetilde{x}(t) = Ae^{(\gamma +j\omega)t+j\varphi}
 \end{equation*}
 Het reëel deel is dus:
 \begin{equation*}
@@ -232,15 +234,15 @@ Het reëel deel is dus:
 We kunnen deze nu invullen in de bewegingsvergelijking:
 \begin{equation}
 	\label{eq:complexbeweging}
-	m(\gamma +i\omega)^2\widetilde{x}(t) + b(\gamma +i\omega)e^{(\gamma +i\omega)t+i\varphi}+ke^{(\gamma +i\omega)t+i\varphi} = 0
+	m(\gamma +j\omega)^2\widetilde{x}(t) + b(\gamma +j\omega)e^{(\gamma +j\omega)t+j\varphi}+ke^{(\gamma +j\omega)t+j\varphi} = 0
 \end{equation}
 Na herordenen en het delen door m, krijgen we:
 \begin{equation*}
-	\gamma^2+2i\gamma\omega-\omega^2+\frac{b}{m}\gamma+i\frac{\omega b}{m}+\frac{k}{m}=0
+	\gamma^2+2j\gamma\omega-\omega^2+\frac{b}{m}\gamma+j\frac{\omega b}{m}+\frac{k}{m}=0
 \end{equation*}
 We kijken nu naar het imaginair deel:
 \begin{align*}
-	2i\gamma \omega +i\frac{\omega b}{m}&=0\\
+	2j\gamma \omega +j\frac{\omega b}{m}&=0\\
 	2\gamma + \frac{b}{m} = 0\\
 	-\frac{b}{2m} = \gamma
 \end{align*}
@@ -261,18 +263,17 @@ We kunnen nu drie gevallen onderscheiden:
 	\includegraphics[width=0.5\linewidth]{Ondergedempt}
 	\caption[Ondergedempte trilling]{Ondergedempte trilling ($b^2 << 4mk$)}
 	\label{fig:ondergedempt}
-\end{figure}
+\end{figure}\\
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.5\linewidth]{Over_Kritisch_gedempt}
 	\caption[Kritisch en over gedempte trilling]{Kritisch ($b^2 = 4mk$) en over gedempte ($b^2 >> 4mk$) trilling}
 	\label{fig:overkritischgedempt}
-\end{figure}
+\end{figure}\\
 
 
 \newpage
-\section{Afleiding 6}
-\textbf{Gedwongen trillingen}\\
+\section{Gedwongen trillingen '23-'24}
 We stellen eerst de bewegingsvergelijking op:
 \begin{equation}
 	m\frac{d^2\widetilde{x}(t)}{dt^2}+b\frac{d\widetilde{x}(t)}{dt}+k\widetilde{x}(t) = F_0cos(\omega t)
@@ -280,14 +281,14 @@ We stellen eerst de bewegingsvergelijking op:
 \end{equation}
 Een voorstel voor de algemene oplossing van differentiaalvergelijking \ref{eq:gedwongenbewegings} ziet er als volgt uit:
 \begin{equation*}
-	\widetilde{x}(t) = Ae^{i(\omega t +\varphi)}
+	\widetilde{x}(t) = Ae^{j(\omega t +\varphi)}
 \end{equation*}
-waarbij $\widetilde{F} = F_0e^{i\omega t}$.
+waarbij $\widetilde{F} = F_0e^{j\omega t}$.
 Dit kunnen we nu invullen in vergelijking \ref{eq:gedwongenbewegings}:
 \begin{align*}
-	-m\omega^2\widetilde{x}(t)+i\omega b\widetilde{x}(t)+k\widetilde{x}(t) & =F_0e^{i\omega t}\\
-	-m\omega^2Ae^{i\omega t}e^{i\varphi}+i\omega bAe^{i\omega t}e^{i\varphi}+kAe^{i\omega t}e^{i\varphi} & =F_0e^{i\omega t}\\
-	-m\omega^2A+i\omega bA+kA & =F_0e^{-i\varphi} 
+	-m\omega^2\widetilde{x}(t)+j\omega b\widetilde{x}(t)+k\widetilde{x}(t) & =F_0e^{j\omega t}\\
+	-m\omega^2Ae^{j\omega t}e^{j\varphi}+j\omega bAe^{j\omega t}e^{j\varphi}+kAe^{j\omega t}e^{j\varphi} & =F_0e^{j\omega t}\\
+	-m\omega^2A+j\omega bA+kA & =F_0e^{-j\varphi} 
 \end{align*}
 We kunnen dit opsplitsen in een imaginair en reëel deel:
 \begin{description}
@@ -312,8 +313,7 @@ Om de amplitude te bepalen kijken we opnieuw naar het imaginair deel:
 \end{align*}
 met $\omega_0$ de natuurlijke frequentie van het systeem en $\omega$ de gedwongen frequentie.
 \newpage
-\section{Afleiding 7}
-\textbf{Golf vergelijking}\\
+\section{Golf vergelijking '23-'24}
 We nemen aan da $F_r$ en $F_l$ uit figuur \ref{fig:touwgolf} gelijk zijn aan elkaar en aan de spanning in het touw $\sigma A$. we stellen ook dat de massa voldoet aan $dm=\rho dsA$.\\
 \begin{figure}[htbp]
 	\centering
@@ -333,12 +333,15 @@ We stellen dat $\alpha$ klein is, en dus kunnen we zeggen dat $sin(\alpha)\appro
 	\sigma\frac{\frac{dy}{dx}|_r-\frac{dy}{dx}|_l}{dx} & = \rho \frac{\partial^2y}{\partial t^2}\\
 	\sigma\frac{\partial^2y}{\partial x^2} & = \rho \frac{\partial^2y}{\partial t^2}\\
 	\frac{\partial^2y}{\partial t^2} & = \frac{\sigma}{\rho}\frac{\partial^2y}{\partial x^2}\\
-	\frac{\partial^2y}{\partial t^2} & = v^2\frac{\partial^2y}{\partial x^2}
+	\frac{\partial^2y}{\partial t^2} & = v_P^2\frac{\partial^2y}{\partial x^2}
+\end{align*}
+Door de eenheden te bekijken is het duidelijk dat $\frac{\sigma}{\rho}$ gelijk is aan het kwadraat van de golfsnelheid $v_P$.
+\begin{align*}
+	\bigg[\frac{\sigma}{\rho}\bigg]=\frac{\frac{N}{m^2}}{\frac{kg}{m^3}}=\frac{Nm}{kg}=\frac{m^2}{s^2}
 \end{align*}
 Hiermee zijn we de 1D golfvergelijking bekomen.
 \newpage
-\section{Afleiding 8 (niet in 2022)}
-\textbf{Harmonische golven}\\
+\section{Harmonische golven}
 Een voorstel voor de 1D golf vergelijking ziet er als volgt uit:
 \begin{equation*}
 	y(x,t) = y_msin(kx \pm \omega t +\varphi)
@@ -413,8 +416,7 @@ We kunnen ook iets zeggen over de voortplantingssnelheid $v$.
  \pm \lambda f & = v
 \end{align*}
 \newpage
-\section{Afleiding 9 (niet in 2022)}
-\textbf{Superpositie}\\
+\section{Superpositie}
 We zeggen dat de algemene oplossing $y(x,t)$ van de golfvergelijking kan uitgedrukt worden door 2 nieuwe functies:
 \begin{equation*}
 	y(x,t) = y_1(x,t)+y_2(x,t)
@@ -422,15 +424,14 @@ We zeggen dat de algemene oplossing $y(x,t)$ van de golfvergelijking kan uitgedr
 We vullen dit opnieuw in in de golfvergelijking:
 \begin{align*}
 	\frac{\partial^2 y(x,t)}{\partial t^2} & = v^2 \frac{\partial^2 y(x,t)}{\partial x^2}\\
-	\frac{\partial^2 y_1(x,t)+y_2(x,t)}{\partial t^2} & = v^2 \frac{\partial^2 y_1(x,t)+y_2(x,t)}{\partial x^2}\\
+	\frac{\partial^2 \big( y_1(x,t)+y_2(x,t) \big)}{\partial t^2} & = v^2 \frac{\partial^2 \big(y_1(x,t)+y_2(x,t)\big)}{\partial x^2}\\
 \end{align*}
 We gebruiken de lineariteit van de afgeleide:
 \begin{equation*}
-	\frac{\partial^2 y_1(x,t)}{\partial t^2} +\frac{\partial^2 y_2(x,t)}{\partial t^2}  = v^2(\frac{\partial^2 y_1(x,t)}{\partial x^2}+\frac{\partial^2 y_2(x,t)}{\partial x^2})
+	\frac{\partial^2 y_1(x,t)}{\partial t^2} +\frac{\partial^2 y_2(x,t)}{\partial t^2}  = v^2\Bigg(\frac{\partial^2 y_1(x,t)}{\partial x^2}+\frac{\partial^2 y_2(x,t)}{\partial x^2}\Bigg)
 \end{equation*}
 \newpage
-\section{Afleiding 10 (niet in 2022)}
-\textbf{Interferentie}\\
+\section{Interferentie}
 Interferentie doet zich voor als er meerdere verschillende golven aanwezig zijn in 1 medium. We kunnen dit voorstellen door volgende 2 functies (zie ook figuur \ref{fig:interferentie}):
 \begin{align*}
 	y_1 & = y_msin(kx\pm\omega t)\\
@@ -442,7 +443,7 @@ Interferentie doet zich voor als er meerdere verschillende golven aanwezig zijn 
 	\caption[Interferentie]{Golven $y_1$ en $y_2$ die zullen interfereren}
 	\label{fig:interferentie}
 \end{figure}\\
-We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}:
+We bepalen nu hoe $y_1+y_2$ er wiskundig uit zal zien aan de hand van de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}:
 \begin{align*}
 	y & = y_1+y_2\\
 	y & = y_msin(kx\pm\omega t) y_m+sin(kx\pm\omega t +\phi)\\
@@ -467,14 +468,13 @@ De 2 uitersten van dit fenomeen krijgen een naam: destructieve- en constructieve
 	\label{fig:omegaVZ}
 \end{figure}\\
 \newpage
-\section{Afleiding 11}
-\textbf{Staande golven}\\
+\section{Staande golven '23-'24}
 Staande golven doen zich vaak voor bij muziek instrumenten zoals de gitaar. We een staande golf als volgt wiskundig voorstellen:
 \begin{align*}
 	y(x,t) &=y_msin(kx-\omega t)+y_msin(kx+\omega t)\\
 	y(x,t) &=\underbrace{2y_msin(kx)}_{A(x)}cos(\omega t)
 \end{align*}
-Hierbij gebruiken we wederom de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) vast gehouden worden, kunnen we volgende randvoorwaarden stellen:
+Hierbij gebruiken we wederom de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}. Omdat de uiteinden van de snaar (met lengte $L$) vast gehouden worden, kunnen we volgende randvoorwaarden stellen:
 \begin{align*}
 	y(0,t)  &= 0 \Rightarrow sin(0)=0\\
 	y(L,t) &= 0 \Rightarrow sin(kL)=0
@@ -511,8 +511,7 @@ Hierbij is $m = 2$ dus moet $\lambda = L$ en de frequentie is dan $f = \frac{v}{
 \end{figure}\\
 Hierbij is $m = 3$ dus moet $\lambda = \frac{2}{3}L$ en de frequentie is dan $f = \frac{v}{\lambda} = \frac{3v}{2L}$.\\
 \newpage
-\section{Afleiding 12}
-\textbf{Energie transport in een golf}\\
+\section{Energie transport in een golf '23-'24}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{EnergieGolf}
@@ -537,8 +536,7 @@ We bekomen het vermogen van de golf. We kunnen hieruit vervolgens de intensiteit
 	I = \frac{P}{S} = 2\pi^2f^2A^2\rho v
 \end{equation*}
 \newpage
-\section{Afleiding 13}
-\textbf{Eigenschappen geluid}\\
+\section{Eigenschappen geluid}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{EigenschappenGeluid}
@@ -562,9 +560,9 @@ Als we rekening houden met het feit dat $dm=\rho V_0$ kunnen we met behulp van i
 	\Delta PS &= \rho vSv'\\
 	\Delta P &= \rho vv'
 \end{align*}
+Met de compressie- of bulk-modulus \[B = \frac{-\Delta P}{\frac{\Delta V}{V_0}} \] \[\Delta P = -B \frac{\Delta V}{V_0}\] We vullen de eerder bekomen vergelijkingen in voor $\Delta V $en $V_0$ in: \[\Delta P = B \frac{v'}{v}\] Wanneer we deze gelijkstellen aan de voorgaande vergelijking voor $\Delta P$ dan wordt volgende vergelijking verkregen: \[B \frac{v'}{v} = \rho v v'\] \[v^2 = \frac{B}{\rho}\] \[v = \sqrt{\frac{B}{\rho}}\]
 \newpage
-\section{Afleiding 14}
-\textbf{Wiskundige beschrijving van geluid}\\
+\section{Wiskundige beschrijving van geluid}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{WiskundigeBeschrijving}
@@ -577,7 +575,6 @@ Als we rekening houden met het feit dat $dm=\rho V_0$ kunnen we met behulp van i
 	\caption[Drukgolven]{Drukgolven in een buis}
 	\label{fig:drukgolvenbuisgrafiek}
 \end{figure}\\
-
 Met de compressie- of bulk-modulus $B = \frac{\Delta P}{\frac{\Delta V}{V_0}}$ kunnen we zeggen dat:
 \begin{align*}
 	\Delta P &= -B \frac{\Delta V}{dv}\\
@@ -592,8 +589,7 @@ We geven een voorstel voor $D$: $D = \Delta sin(kx\pm \omega t)$
 	&= \underbrace{-2\pi\rho vfA}_{\Delta P_m} cos(kx\pm \omega t)
 \end{align*}
 \newpage
-\section{Afleiding 15 (niet in 2022)}
-\textbf{Trillende lucht kolommen}\\
+\section{Trillende lucht kolommen}
 We modelleren de verplaatsing van lucht als:
 \begin{equation}
 	\label{eq:Verplaatsing}
@@ -611,22 +607,21 @@ Uit vergelijking \ref{eq:Verplaatsing} en \ref{eq:Druk} kunnen we afleiden dat d
 	\includegraphics[width=0.7\linewidth]{FaseVerschilDrukVerplaatsing}
 	\caption[Fase vershil druk verplaatsing]{Fase verschil tussen druk en verplaatsing}
 	\label{fig:faseverschildrukverplaatsing}
-\end{figure}
+\end{figure}\\
 We zien hier duidelijk dat de druk na ijlt op de verplaatsing. 
 \newpage
-\section{Afleiding 16}
-\textbf{Staande golven in een open buis}\\
+\section{Staande golven in een open buis '23-'24}
 We veronderstellen een open buis met lengte L. Als nevenvoorwaarde stellen we dat de druk aan de uiterste kanten van de buis gelijk is aan de atmosferische druk $P_{atm}$. We kijken eerst naar de drukverdeling in de buis:
 \begin{align*}
 	\Delta P_S (x,t) &= \Delta P_m sin(kx+\omega t) + \Delta P_m sin(kx-\omega t)\\
 	&= 2\Delta P_m sin(kx)cos(\omega t)
 \end{align*}
-Hierbij gebruiken we de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}. Vervolgens kijken we naar de verplaatsing in de buis:
+Hierbij gebruiken we de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}. Vervolgens kijken we naar de verplaatsing in de buis:
 \begin{align*}
 	D_S(x,t)&=Asin(kx+\omega t+\frac{\pi}{2})+Asin(kx-\omega t+\frac{\pi}{2})\\
 	&= 2Asin(kx+\frac{\pi}{2})cos(\omega t)
 \end{align*}
-Hierbij gebruiken we nogmaals de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Som-naar-product-identiteiten_(regels_van_Simpson)}{regels van Simpson}.\\
+Hierbij gebruiken we nogmaals de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson}.\\
 Enkele oplossingen zien er als volgt uit:\\
 
 \textbf{Eerste harmonische}\\
@@ -648,7 +643,7 @@ Hierbij is $\lambda = 2L$ en $f=\frac{v}{2L}$.
 	\end{subfigure}
 	\caption{Druk en verplaatsing voor de eerste harmonische in een open buis}
 	\label{fig:OpenBuisEerste}
-\end{figure}
+\end{figure}\\
 \newpage
 \textbf{Tweede harmonische}\\
 Hierbij is $\lambda = L$ en $f=\frac{v}{L}$.
@@ -669,7 +664,7 @@ Hierbij is $\lambda = L$ en $f=\frac{v}{L}$.
 	\end{subfigure}
 	\caption{Druk en verplaatsing voor de tweede harmonische in een open buis}
 	\label{fig:OpenBuisTweede}
-\end{figure}
+\end{figure}\\
 
 \textbf{Derde harmonische}\\
 Hierbij is $\lambda = \frac{2L}{3}$ en $f=\frac{3v}{2L}$.
@@ -690,10 +685,9 @@ Hierbij is $\lambda = \frac{2L}{3}$ en $f=\frac{3v}{2L}$.
 	\end{subfigure}
 	\caption{Druk en verplaatsing voor de derde harmonische in een open buis}
 	\label{fig:OpenBuisDerde}
-\end{figure}
+\end{figure}\\
 \newpage
-\section{Afleiding 17}
-\textbf{Staande golven in een half open buis}\\
+\section{Staande golven in een half open buis '23-'24}
 \begin{figure}[!h]
 	\centering
 	\begin{subfigure}{.5\textwidth}
@@ -728,14 +722,13 @@ Dit wil zeggen dat:
 	k=\frac{3\pi}{2L}=\frac{2\pi}{\lambda}\Rightarrow \lambda=\frac{4L}{3} \wedge f=\frac{3v}{4L}
 \end{equation*}
 \newpage
-\section{Afleiding 18 (niet in 2022)}
-\textbf{Interferentie van geluidsgolven}\\
+\section{Interferentie van geluidsgolven}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.3\linewidth,angle=90]{InterferentieSpeakers}
 	\caption[Interferentie]{Interferentie bij speakers}
 	\label{fig:interferentiespeakers}
-\end{figure}
+\end{figure}\\
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{SpeakersWiskundig}
@@ -747,7 +740,7 @@ We kunnen de druk beschrijven als:
 	\Delta P_1 &= \Delta P_msin(kL_1\pm\omega t)\\
 	\Delta P_2 &= \Delta P_msin(kL_2\pm\omega t)
 \end{align*}
-Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson} toe te passen krijgen we:
 \begin{equation*}
 	\Delta P = 2\Delta P_msin(k\frac{L_1+L_2}{2}\pm\omega t)cos(k\frac{L_1-L_2}{2})
 \end{equation*}
@@ -756,14 +749,13 @@ We onderscheiden 2 soorten interferentie zoals te zien in figuur \ref{fig:interf
 Bij constructieve interferentie is $\frac{k\Delta L}{2}=0,\pi,2\pi,\ldots$ Dit wil zeggen dat $\Delta L$ moet voldoen aan $\Delta L = 0,\lambda,2\lambda,\ldots$. Destructieve interferentie doet zich voor als $\frac{k\Delta L}{2}=\frac{\pi}{2},\frac{3\pi}{2},\ldots$. $\Delta L$ moet hier dus voldoen aan $\Delta L = \frac{\lambda}{2},\frac{3\lambda}{2},\ldots$.
 
 \newpage
-\section{Afleiding 19 (niet in 2022)}
-\textbf{Kloppen van een golf}\\
+\section{Kloppen van een golf}
 Als 2 golven frequenties hebben die zeer dicht bij elkaar liggen, krijgen we kloppingen. We kunnen de druk van beide golven voorstellen als:
 \begin{align*}
 	D_1&=Asin(2\pi f_1t)\\
 	D_2&=Asin(2\pi f_2t)
 \end{align*}
-Door beide op te tellen en de regels van Simpson toe te passen krijgen we:
+Door beide op te tellen en de \href{https://nl.wikipedia.org/wiki/Lijst_van_goniometrische_gelijkheden#Formules_van_Simpson}{regels van Simpson} toe te passen krijgen we:
 \begin{equation*}
 	D=2Acos(2\pi\frac{f_1-f_2}{2}t)sin(2\pi\frac{f_1+f_2}{2}t)
 \end{equation*}
@@ -771,8 +763,7 @@ Hierbij vermelden we ook nog dat als $f_1\approx f_2\Rightarrow\Delta\omega=\fra
 
 
 \newpage
-\section{Afleiding 20}
-\textbf{Doppler effect}\\
+\section{Doppler effect '23-'24}
 Het doppler effect doet zich voor als de bron en waarnemer van een geluid in beweging zijn tegenover elkaar. We analyseren nu het geval waarin de bron beweegt: als de bron naar rechts beweegt,  zal een waarnemer die zich links bevindt een lagere frequentie waarnemen. Een waarnemer die rechts staat, zal daarentegen een hogere frequentie waarnemen. De nieuwe frequentie heet $\lambda'$. Wiskundig kunnen we $\lambda'$ bepalen met volgende redenering:
 \begin{equation*}
 	\lambda'=\lambda\pm v_{bron}T=\lambda\pm v_{bron}\frac{\lambda}{v_s}=\lambda(1\pm\frac{v_{bron}}{v_s})
@@ -789,8 +780,7 @@ De nieuwe frequentie is dan $f'=\frac{f}{1\pm\frac{v_{bron}}{v_s}}$.
 	
 \end{center}
 \newpage
-\section{Afleiding 21 (Niet in 2022)}
-\textbf{Basiswetten voor elektromagnetische golven}\\
+\section{Basiswetten voor elektromagnetische golven}
 \paragraph{Wet van Ampère}
 \begin{equation*}
 	\oint\vec{B}\vec{dl}=\mu I_{\text{lus}}+\mu_0\epsilon_0\frac{d\Phi_E}{dt}
@@ -801,7 +791,7 @@ waarbij $\Phi_E$ de elektrische flux is:
 	\includegraphics[width=0.5\linewidth]{ElektrischVeld}
 	\caption[Elektrisch veld]{Elektrisch veld}
 	\label{fig:elektrischveld}
-\end{figure}
+\end{figure}\\
 \begin{align*}
 	\Phi_E &= E_{\perp}A\\
 	&= Ecos(\theta)A\\
@@ -818,8 +808,7 @@ waarbij $\Phi_E$ de elektrische flux is:
 \end{align}
 waarbij vergelijking \ref{eq:faraday} en \ref{eq:maxwell} invloed hebben op elektromagnetische golven.
 \newpage
-\section{Afleiding 22 (niet in 2022)}
-\textbf{Generatie EM golven}\\
+\section{Generatie EM golven}
 Men kan elektromagnetische golven genereren door twee platen naast elkaar te zetten met een wisselspanningsbron zoals in figuur \ref{fig:emgolf1}:
 \begin{figure}[h]
 	\centering
@@ -833,10 +822,9 @@ Als de spanningsbron van polariteit veranderd, veranderen ook de velden van rich
 	\includegraphics[width=0.7\linewidth]{EMGolf2}
 	\caption[Generatie en voortplanting]{Generatie en voortplanting EM golf}
 	\label{fig:emgolf2}
-\end{figure}
+\end{figure}\\
 \newpage
-\section{Afleiding 23 (niet in 2022)}
-\textbf{Elektromagnetische velden}\\
+\section{Elektromagnetische velden}
 Eerst enkele eigenschappen van elektromagnetische golven:
 \begin{enumerate}
 	\item $\vec{B}$ en $\vec{E}$ staan loodrecht op de voortplantingsrichting (transversale golven)
@@ -849,15 +837,14 @@ Eerst enkele eigenschappen van elektromagnetische golven:
 	\includegraphics[width=0.7\linewidth]{An-electromagnetic-wave}
 	\caption[Elektromagnetische golf]{Elektromagnetische golf}
 	\label{fig:an-electromagnetic-wave}
-\end{figure}
+\end{figure}\\
 In figuur \ref{fig:an-electromagnetic-wave} kunnen we stellen dat:
 \begin{align*}
 	\vec{E} &= E_msin(kx-\omega t)\vec{j}\\
 	\vec{B} &= B_msin(kx-\omega t)\vec{k}
 \end{align*}
 \newpage
-\section{Afleiding 24}
-\textbf{Opstellen van de golfvergelijking van een elektromagnetische golf}\\
+\section{Golfvergelijking van een elektromagnetische golf '23-'24}
 \textbf{Wet van Faraday}\\
 \begin{figure}[h]
 	\centering
@@ -910,7 +897,7 @@ Hierbij zijn de scalaire producten voor zijde 2 en 4 gelijk aan nul omdat de vec
 	\end{subfigure}
 	\caption{Wet van Maxwell}
 	\label{fig:InductieMaxwell}
-\end{figure}
+\end{figure}\\
 We maken opnieuw dezelfde redenering als voor de afleiding met de wet van Faraday: \\ We merken wel op dat we nu met een magnetisch veld werken en dat we gebruik maken van de wet van Maxwell ($\mu_0\epsilon_0\frac{\partial \Phi_E}{\partial t}=\oint\vec{B}\cdot\vec{dS}$). De twee dikke lijnen kunnen we hierdoor definiëren als:
 \begin{align*}
 	\vec{B_L} &= \vec{B}-\frac{\partial\vec{B}}{\partial x}\frac{dx}{2}\\
@@ -944,8 +931,7 @@ We kunnen nu vergelijking \ref{eq:DubbelFaraday} en \ref{eq:DubbelMaxwell} samen
 \end{equation*}
 Hierbij vermelden we nog dat $c^2=\frac{1}{\mu_0\epsilon_0}$.
 \newpage
-\section{Afleiding 25 (niet in 2022)}
-\textbf{Energie van een elektromagnetische golf}\\
+\section{Energie van een elektromagnetische golf}
 We definiëren de energiedichtheid van een elektrisch en magnetisch veld als volgt: 
 \begin{align*}
 	U_E&=\frac{1}{2}\epsilon_0E^2\\
@@ -1004,8 +990,7 @@ We nemen nu het gemiddelde van $\vec{S}$:
 	\vec{S}=\frac{1}{T}\int_{0}^{T}Sdt=\frac{E^2_m}{2\mu_0c}=\frac{E_{\text{RMS}}B_{\text{RMS}}}{\mu_0}
 \end{equation*}
 \newpage
-\section{Afleiding 26}
-\textbf{Bewijs de gelijkheid van de lichtsnelheid via eenheden}\\
+\section{Bewijs de gelijkheid van de lichtsnelheid via eenheden}
 We zullen bewijzen dat de volgende gelijkheid klopt met betrekking tot de eenheden:
 \begin{equation*}
 	c = \frac{1}{\sqrt{\mu_0\epsilon_0}}
@@ -1019,7 +1004,7 @@ We vullen de eenheden in van alle constanten en werken dan verder:
 	\frac{m}{s} &= \frac{m}{s}	
 \end{align*}
 \newpage
-\section{Afleiding 27}
+\section{Werking sferische spiegel '23-'24}
 \textbf{Afleiding van de werking van een sferische spiegel op verschillende posities van het object}\\
 We bespreken eerst de situatie waarbij een object tussen C en f staat, zoals te zien is in figuur \ref{fig:objecttussen}.
 \begin{figure}[h]
@@ -1083,7 +1068,7 @@ We bespreken nu de situatie waarbij het object ver weg staat, zoals te zien is i
 	\includegraphics[width=0.7\linewidth]{RondeSpiegelVoorwerpVer}
 	\caption[Spiegel ver]{Object staat ver van de spiegel}
 	\label{fig:rondespiegelvoorwerpver}
-\end{figure} \\
+\end{figure}\\ \\
 We proberen opnieuw om de afstand $d_I$ te bepalen aan de hand van driehoeken.
 \begin{align*}
 	\Delta OO'A&\Rightarrow tan(\theta)=\frac{h_O}{d_O}\\
@@ -1109,8 +1094,7 @@ We kunnen dus stellen dat:
 \end{align*}
 Alle bovenstaande inzichten moeten ook toegepast kunnen worden op een convexe spiegel. 
 \newpage
-\section{Afleiding 28}
-\textbf{Afleiding van Snellius}\\
+\section{Afleiding van Snellius '23-'24}
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Snellius}
@@ -1155,8 +1139,7 @@ Na herordening krijgen we de wet van Snellius:
 	n_1sin(\theta_1)=n_2sin(\theta_2)
 \end{equation}
 \newpage
-\section{Afleiding 29}
-\textbf{Regenboog}\\
+\section{Regenboog '23-'24}
 We bespreken eerst de chromatische dispersie van wit licht. Zoals te zien is in figuur \ref{fig:prisma}, zal bij het breken van licht een splitsing van de kleuren gebeuren. De volgorde van de gesplitste kleuren is niet willekeurig: als de golflengte van licht korter wordt, zal de brekingsindex toe nemen zoals te zien is op figuur \ref{fig:chromatische-dispersie}. 
 \begin{figure}[!h]
 	\centering
@@ -1181,7 +1164,7 @@ Door bovenstaand concept toe te passen op een regendruppel die door de lucht val
 	\includegraphics[width=0.5\linewidth]{RegendruppelRegenboog}
 	\caption[Regenboog druppel]{Analyse van één druppel}
 	\label{fig:regendruppelregenboog}
-\end{figure}
+\end{figure}\\
 \newpage
 Als we enkel rekening houden met één enkele druppel, zien we dat de volgorde van kleuren omgekeerd is vergeleken met een normale regenboog. Daarom moeten we ook rekening houden met het feit dat er meerdere regendruppels nodig zijn om een regenboog te vormen (zie figuur \ref{fig:regenboog}).
 \begin{figure}[!h]
@@ -1196,19 +1179,18 @@ Tevens is het mogelijk om een tweede regenboog waar te nemen boven de eerste. De
 	\includegraphics[width=0.5\linewidth]{SecundaireRegenboog}
 	\caption[Secundaire regenboog]{Secundaire regenboog}
 	\label{fig:secundaireregenboog}
-\end{figure}
+\end{figure}\\
 
 \newpage
-\section{Afleiding 30}
+\section{Experiment van Young '23-'24}
 \label{sec:young}
-\textbf{Experiment van Young}\\
 Het experiment van Young was belangrijk om het golfkarakter van licht aan te tonen. Concreet werd aangetoond dat lichtgolven met elkaar kunnen interfereren zoals geluidsgolven. Het experiment bestaat uit twee spleten die dicht bij elkaar geplaatst worden, zoals te zien is in figuur \ref{fig:young}. Hierbij is het belangrijk dat de spleten klein genoeg zijn (grote orde $a\approx\lambda$), anders zal er geen buiging van het licht plaats vinden zoals te zien is in figuur \ref{fig:buiginggroot} en \ref{fig:buigingklein}. We merken op dat het golfpatroon op figuur \ref{fig:young} enkel theoretisch is, de reden hiervoor staat in afleiding \ref{sec:RealiteitBuiging}.
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{young}
 	\caption[Experiment Young]{Experiment Young}
 	\label{fig:young}
-\end{figure}
+\end{figure}\\
 \begin{figure}[!h]
 	\centering
 	\begin{subfigure}{.5\textwidth}
@@ -1225,7 +1207,7 @@ Het experiment van Young was belangrijk om het golfkarakter van licht aan te ton
 	\end{subfigure}
 	\caption{Spleten}
 	\label{fig:Spleten}
-\end{figure}
+\end{figure}\\
 \newpage
 Uit het experiment van Young kunnen we ook de golflengte afleiden van de invallende lichtgolven. Hiervoor kijken we naar figuur \ref{fig:lambdazoeken}:
 \begin{figure}[!h]
@@ -1253,9 +1235,8 @@ Door vergelijking \ref{eq:eerstemax} en \ref{eq:eerstemax1} te combineren krijge
 	\lambda=\frac{dH}{L}
 \end{equation}
 \newpage
-\section{Afleiding 31}
+\section{Intensiteits-profiel}
 \label{sec:intensiteitWrong}
-\textbf{Intensiteits-profiel}\\
 Om een idee te krijgen over de intensiteit van licht bij het experiment van Young, kijken we eerst naar figuur \ref{fig:intensiteitsprofiel}:
 \begin{figure}[!h]
 	\centering
@@ -1290,15 +1271,14 @@ Het eerste maximum kunnen we vinden door $k\frac{dH}{2L}$ gelijk te stellen aan 
 \end{equation*}
 Merk op dat deze vergelijking gelijk is aan vergelijking \ref{eq:lambdadingen}. We kunnen analoog werken om de minima te vinden.
 \newpage
-\section{Afleiding 32}
+\section{Buiging door één opening '23-'24}
 \label{sec:RealiteitBuiging}
-\textbf{Buiging door één opening}\\
 \begin{figure}[!h]
 	\centering
 	\includegraphics[width=0.5\linewidth]{BuigingDoor1Opening}
 	\caption[Buiging door 1 opening]{Buiging door één opening}
 	\label{fig:buigingdoor1opening}
-\end{figure} \\
+\end{figure}\\
 Bij afleiding \ref{sec:young} en \ref{sec:intensiteitWrong} is een verkeerde aanname gemaakt. Er is verondersteld dat licht niet zal interfereren als het door één enkele spleet gaat, dit is echter niet het geval zoals aangetoond zal worden in de volgende afleiding. Om de realistische intensiteit te weten te komen op figuur \ref{fig:buigingdoor1opening}, kijken we naar de volgende vier figuren (\ref{fig:buiging1}, \ref{fig:buiging2}, \ref{fig:buiging3}, \ref{fig:buiging4}). 
 \begin{figure}[!h]
 	\centering
@@ -1313,7 +1293,7 @@ Hier is er geen enkele interferentie, we zien één heldere plek in het midden v
 	\includegraphics[width=0.5\linewidth]{Buiging2}
 	\caption[Buiging 2]{$Dsin(\theta)=\lambda$}
 	\label{fig:buiging2}
-\end{figure}
+\end{figure}\\
 Hier zal de onderste helft van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=\lambda\Rightarrow H=\frac{\lambda L}{D}$)
 \begin{figure}[!h]
 	\centering
@@ -1328,7 +1308,7 @@ Hier zullen de onderste twee derden van de lichtstralen destructief interfereren
 	\includegraphics[width=0.5\linewidth]{Buiging4}
 	\caption[Buiging 4]{$Dsin(\theta)=2\lambda$}
 	\label{fig:buiging4}
-\end{figure}
+\end{figure}\\
 Hier zal de onderste helft van de lichtstralen destructief interfereren. ($ \frac{DH}{L}=2\lambda\Rightarrow H=\frac{2\lambda L}{D}$)
 \newline
 We zien dus dat de intensiteit sterk af neemt als we $\theta$ toe laten nemen. Dit zorgt er ultiem voor dat de resultaten van het experiment van Young er uit zien als op figuur \ref{fig:intensiteitsprofiel-1}. We zien duidelijk dat de pieken niet gelijk blijven, maar verder afnemen in amplitude naarmate we $\theta$ laten toe nemen. 
@@ -1337,10 +1317,9 @@ We zien dus dat de intensiteit sterk af neemt als we $\theta$ toe laten nemen. D
 	\includegraphics[width=0.7\linewidth]{"IntensiteitsProfiel (1)"}
 	\caption[Intensiteitsprofiel]{Secundair intensiteitsprofiel}
 	\label{fig:intensiteitsprofiel-1}
-\end{figure}
+\end{figure}\\
 \newpage
-\section{Afleiding 33 (niet in 2022)}
-\textbf{Optische resolutie} \\
+\section{Optische resolutie}
 Wanneer twee objecten dicht bij elkaar liggen, kunnen we ze niet van elkaar onderscheiden door buiging. Neem de opstelling in figuur \ref{fig:optischeresolutie}:
 \begin{figure}[h]
 	\centering

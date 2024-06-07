@@ -11,3 +11,4 @@ Feel free to help by making an issue or a PR.
 - [Sodir Yuksel](https://github.com/sydon1)
 - [Jonathan Valgaeren](https://github.com/ItsAlphie)
 - [Robbe Willaert](https://github.com/Robope)
+- [Timo Vandevenne](https://github.com/TimoNotThy)
