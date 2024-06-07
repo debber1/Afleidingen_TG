@@ -12,3 +12,4 @@ Feel free to help by making an issue or a PR.
 - [Jonathan Valgaeren](https://github.com/ItsAlphie)
 - [Robbe Willaert](https://github.com/Robope)
 - [Timo Vandevenne](https://github.com/TimoNotThy)
+- [Felix Lots](https://github.com/Fail-X-bot)
